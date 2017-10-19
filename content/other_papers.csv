@@ -1,0 +1,5 @@
+title,conference_abbrev,conference_name,conference_date,filename,authors,additional,best_paper
+'An ISP-Scale Deployment of TapDance','FOCI\'17','USENIX Workshop on Free and Open Communications on the Internet ','August 2017','isp-tapdance.pdf','<li>Sergey Frolov, Fred Douglas, Will Scott, Allison McDonald,<b>Benjamin VanderSloot</b>,</li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rod Hynes, Adam Kruger, Michalis Kallitsis, David G. Robinson, Steve Schultze,</li><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nikita Borisov, J. Alex Halderman, and Eric Wustrow</li>','',''
+'A Security Analysis of Police Computer Systems','PST\'16','IEEE Privacy, Security, and Trust','December 2016','police.pdf','',''
+'DDoSCoin: Cryptocurrency with a Malicious Proof-of-Work','WOOT\'16','USENIX Workshop on Offensive Technologies','August 2016','woot16-paper-wustrow.pdf','<li><b>Benjamin VanderSloot</b>, Stuart Wheaton, J. Alex Halderman</li>','',''
+'A Memory Rename Table to Reduce Energy and Improve Performance','ISLPED\'14','International Symposium on Low Power Electronics and Design','August 2014','rename.pdf','<li>Joseph Pusdesris, <b>Benjamin VanderSloot</b>, Trevor Mudge</li>',''
