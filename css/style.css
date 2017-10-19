@@ -1,12 +1,12 @@
 @font-face{
-       font-family: 'Lato', sans-serif;
+       font-family: 'Helvetica', sans-serif;
 }
 
-.front-page { margin-right: 25px ; font-family: "Lato"; font-size:16px; }
+.front-page { margin-right: 25px ; font-family: "Helvetica"; font-size:16px; }
 
-.inblog { font-family: "Lato"; font-weight: 400; margin-right: 25px;}
+.inblog { font-family: "Helvetica"; font-weight: 400; margin-right: 25px;}
 .inblog p { margin-bottom: 25px; font-size: 15px; }
-.inblog h3 { margin-bottom: 5px; font-size: 18px; font-family: "Lato"; font-weight: 310;}
+.inblog h3 { margin-bottom: 5px; font-size: 18px; font-family: "Helvetica"; font-weight: 310;}
 
 
 *{margin:0;padding:0;}
@@ -15,7 +15,7 @@ a:hover { color: #8F0000; text-decoration:underline; }
 
 .top {padding-top: 40px;}
 
-h1 { font-weight: 300; font-family: "Lato"; font-size:40px;  }
+h1 { font-weight: 300; font-family: "Helvetica"; font-size:40px;  }
 h1 a {color: #666; text-decoration: none;}
 h1 a:hover {color: #555; text-decoration: none; }
 
@@ -49,14 +49,14 @@ pre {margin-bottom: 20px; padding-bottom: 5px;}
 	.award li {margin: 5px 20px 0 40px;}
 
 
-.blog {  clear: both; margin-left:auto; margin-right:auto; 	font-family:"Lato"}
+.blog {  clear: both; margin-left:auto; margin-right:auto; 	font-family:"Helvetica"}
 	.blog .content {text-align: justify;}
-	.blog h3 { font-size: 1.7em; font-weight: normal; font-family:"Lato": padding-bottom:5px;}
+	.blog h3 { font-size: 1.7em; font-weight: normal; font-family:"Helvetica": padding-bottom:5px;}
 	.blog h3 a { color: #555; }
 	.blog h4 {margin: 20px 0 5px 0;}
-	.blog p {margin: 0 0 15px; font-family: "Lato" }
+	.blog p {margin: 0 0 15px; font-family: "Helvetica" }
 
-.cv { font-weight: 400 !important; font-family: "Lato"; font-size:15px; padding-right: 20px}
+.cv { font-weight: 400 !important; font-family: "Helvetica"; font-size:15px; padding-right: 20px}
 	.cv .title {margin-left:auto; margin-right:auto; }
 	.cv .content {margin-left:auto; margin-right:auto;}
 	.cv h4 {margin-top: 30px; margin-bottom: 8px; font-size:20px; font-weight: bold }
@@ -103,29 +103,29 @@ code {font-size: 1.2em;
 @media print{
   a:link:after{content:""}
   li {
-       font-family: 'Lato', sans-serif;
+       font-family: 'Helvetica', sans-serif;
        font-weight: 400;
        font-size: 11px;
   }
   p {
-       font-family: 'Lato', sans-serif;
+       font-family: 'Helvetica', sans-serif;
        font-weight: 400;
        font-size: 11px;
   }
   a {
-       font-family: 'Lato', sans-serif;
+       font-family: 'Helvetica', sans-serif;
        font-weight: 400;
        font-size: 11px;
        color: #151B54;
   }
   a:link {
-       font-family: 'Lato', sans-serif;
+       font-family: 'Helvetica', sans-serif;
        font-weight: 400;
        font-size: 11px;
        color: #151B54;
   }
   a:visited {
-       font-family: 'Lato', sans-serif;
+       font-family: 'Helvetica', sans-serif;
        font-weight: 400;
        font-size: 11px;
        color: #151B54;
@@ -133,6 +133,6 @@ code {font-size: 1.2em;
   h3 {
   }
   @font-face{
-         font-family: 'Lato', sans-serif;
+         font-family: 'Helvetica', sans-serif;
   }
 }

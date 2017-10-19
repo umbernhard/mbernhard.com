@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% autoescape false %}
 <html lang="en">
   <head>
       <meta charset="utf-8">
@@ -6,9 +7,9 @@
       <meta name="description" content="Ph.D. Student in Computer Science and Engineering at the University of Michigan.">
       <meta name="keywords" content="Benjamin VanderSloot">
       <meta name="author" content="Benjamin VanderSloot">
-      <link rel="stylesheet" href="{{ url_for('css', filename='bootstrap.min.css') }}" type="text/css">
-      <link href="{{ url_for('css', filename='.style.css') }}" rel="stylesheet" type="text/css">
-      <link href="{{ url_for('css', filename='pygments.css') }}" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
+      <link href="./css/style.css" rel="stylesheet" type="text/css">
+      <link href="./css/pygments.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
@@ -24,7 +25,7 @@
         <div class="col-md-12 col-sm-12 col-lg-10 col-lg-offset-1">
 		<div class="row">
 			<div class="col-md-3 col-sm-4 col-xs-4">
-			  <img src="{{ url_for('images', 'benjamin.vandersloot.jpg') }}" class="col-md-12 col-sm-12 col-xs-12 col-lg-12 displayed"/>
+			  <img src="./images/benjamin.vandersloot.jpg" class="col-md-12 col-sm-12 col-xs-12 col-lg-12 displayed"/>
 			</div>
 			<div class="col-md-9 col-sm-8 col-xs-8"><div class="front-page" style="padding-top: 10px">
 			{{ personal }}
@@ -39,7 +40,7 @@
 		  <div class="col-md-12 col-sm-12">
 			{% for item in main_papers %}   
 			<div class="inblog">
-			  <h3><a href="{{ url_for('papers', item.filename) }}">
+			  <h3><a href="./papers/{{ item.filename }}">
 				{{ item.title }} ({{ item.conference_abbrev }})
 			  </a></h3>
 			  <p>{{ item.abstract }}
@@ -66,3 +67,4 @@
 
   </body>
 </html>
+{% endautoescape %}
