@@ -8,6 +8,7 @@ all: venv
 	cp images/*.jpg build/images
 	cp keys/*.pub build/keys/
 	cp papers/*.pdf build/papers/
+	cp images/favicon.ico ./build/
 
 venv: requirements.txt
 	python3 -m venv venv
