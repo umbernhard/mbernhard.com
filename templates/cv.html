@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-
+{% autoescape false %}
 <html lang="en">
 <head>
   <meta charset="utf-8">
 
   <title>Curriculum Vitae</title>
   <meta content="Benjamin VanderSloot" name="author">
-  <link href="{{ url_for('css', filename='bootstrap.min.css') }}" rel="stylesheet" type="text/css">
-  <link href="{{ url_for('css', filename='.style.css') }}" rel="stylesheet" type="text/css">
-  <link href="{{ url_for('css', filename='pygments.css') }}" rel="stylesheet" type="text/css">
+  <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="/css/style.css" rel="stylesheet" type="text/css">
+  <link href="/css/pygments.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -67,13 +67,14 @@
 
 			  {% for item in selected_papers %}   
               <div class="talk">
-                <p><a href="{{ url_for('papers', item.filename) }}">{{ item.title }}</a>
+                <p><a href="/papers/{{ item.filename }}">{{ item.title }}</a>
                 </p>
 				<ul>
 					{{ item.authors }}
 					<li> {{ item.conference_name }} ({{ item.conference_abbrev }}), {{ item.conference_date }} {% if item.best_paper %} &mdash; <em><b>Best Paper Award</b></em> {% endif %}</li>
 					{{ item.additional }}
 				</ul>
+			  </div>
 			  {% endfor %}
 
               <h4 id="other-peer-reviewed-publications">Other Peer-Reviewed Publications</h4>
@@ -81,13 +82,14 @@
 
 			  {% for item in other_papers %}   
               <div class="talk">
-                <p><a href="{{ url_for('papers', item.filename) }}">{{ item.title }}</a>
+                <p><a href="/papers/{{ item.filename }}">{{ item.title }}</a>
                 </p>
 				<ul>
 					{{ item.authors }}
 					<li> {{ item.conference_name }} ({{ item.conference_abbrev }}), {{ item.conference_date }} {% if item.best_paper %} &mdash; <em><b>Best Paper Award</b></em> {% endif %}</li>
 					{{ item.additional }}
 				</ul>
+		 	  </div>
 			  {% endfor %}
 
 
@@ -186,7 +188,7 @@
                   <li>
                     <a href="{{ item.link }}">{{ item.title }}</a> ({{ item.organization }})
                   </li>
-				  (% endfor %}
+				  {% endfor %}
                 </ul>
               </div>
             </div>
@@ -197,3 +199,4 @@
   </div>
 </body>
 </html>
+{% endautoescape %}

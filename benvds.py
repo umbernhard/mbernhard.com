@@ -24,24 +24,24 @@ def load_folder(directory):
             with open(join(directory, f)) as fin:
                 content[name] = fin.read()
 
+load_folder('./content/')
+
+
 @app.route('/')
 @app.route('/index.html')
 def index():
     return render_template('index.html', main_papers=content['main_papers'], personal=content['personal'])
 
 @app.route('/cv.html')
-@app.route('/cv')
 def cv():
-    return 'Hello, World!'
-
-@app.route('/css/<filename>')
-@app.route('/images/<filename>')
-@app.route('/papers/<filename>')
-@app.route('/keys/<filename>')
-def folders(filename):
-    filename = join('./',request.path[1:])
-    return send_file(filename)
+    return render_template('cv.html',
+        selected_papers=content['selected_papers'],
+        other_papers=content['other_papers'],
+        personal_short=content['personal_short'],
+        popular_media=content['popular_media'],
+        awards=content['awards'],
+        education=content['education']
+        )
 
 if __name__ == '__main__':
-    load_folder('./content/')
     app.run(debug=True, host='127.0.0.1', port=8080)
