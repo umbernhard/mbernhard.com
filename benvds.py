@@ -52,19 +52,19 @@ def cv():
         education=content['education']
         )
 
-@app.route('/blog')
+@app.route('/blog.html')
 def blog():
     five_recent = sorted(content['blogposts'], key=lambda x: x['date'], reverse=True)
     if len(five_recent) > 5:
         five_recent = five_recent[0:5]
     return render_template('blog.html', blogposts=five_recent, blog_main=content['blog_main'])
 
-@app.route('/blog/<postid>')
+@app.route('/blog/<postid>.html')
 def post(postid):
     items = [x for x in content['blogposts'] if x['id'] == postid]
     return render_template('post.html', item=items[0])
 
-@app.route('/blog-index')
+@app.route('/blog-index.html')
 def list():
     recent = sorted(content['blogposts'], key=lambda x: x['date'], reverse=True)
     return render_template('all.html', blogposts=recent, blog_main=content['blog_main'])
