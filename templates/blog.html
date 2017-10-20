@@ -28,40 +28,34 @@
 			  <img src="./images/benjamin.vandersloot.jpg" class="col-md-12 col-sm-12 col-xs-12 col-lg-12 displayed"/>
 			</div>
 			<div class="col-md-9 col-sm-8 col-xs-8"><div class="front-page" style="padding-top: 10px">
-			{{ personal }}
+			{{ blog_main }}
 			</div></div>
 		</div>
+
 		<div class="row">
 		  <div class="col-md-12 col-sm-12 col-lg-12">
 			<hr/>
 		  </div>
 		</div>
+	  </div></div>
+
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-lg-10 col-lg-offset-1">
 		<div class="row">
 		  <div class="col-md-12 col-sm-12">
-			{% for item in main_papers %}   
+			{% for item in blogposts %}   
 			<div class="inblog">
-			  <h3><a href="./papers/{{ item.filename }}">
-				{{ item.title }} ({{ item.conference_abbrev }})
-			  </a></h3>
-			  <p>{{ item.abstract }}</p>
+			  <h2><a href="/blog/{{ item.id }}">
+				{{ item.title }}
+			  </a></h2>
+			  {{ item.body }}
 			</div>
+            <hr/>
 			{% endfor %}
 		   </div>
 		  </div>
 		 </div>
 	   </div>
-
-	   <div class="row">
-		<div class="col-md-12 col-sm-12 col-lg-12">
-		  <hr/>
-		</div>
-	   </div>
-
-	  <div class="row">
-	    <div class="col-md-12 col-sm-12">
-		  Website design stolen shamelessly from <a href="https://zakird.com">Zakir Durumeric</a>.
-	    </div>
-	  </div>
 	</div>
 
   </body>
