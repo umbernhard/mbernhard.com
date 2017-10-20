@@ -17,7 +17,6 @@ def product_url_generator():
         ids = [row['id'] for row in reader]
         for i in ids:
             yield '/blog/'+i+'.html'
-            print('/blog/'+i+'.html')
 
 
 if __name__ == '__main__':

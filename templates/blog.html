@@ -44,6 +44,7 @@
 		<div class="row">
 		  <div class="col-md-12 col-sm-12">
 			{% for item in blogposts %}   
+			{% if item.show %}
 			<div class="inblog">
 			  <h2><a href="/blog/{{ item.id }}.html">
 				{{ item.title }}
@@ -51,6 +52,7 @@
 			  {{ item.body }}
 			</div>
             <hr/>
+			{% endif %}
 			{% endfor %}
 		   </div>
 		  </div>

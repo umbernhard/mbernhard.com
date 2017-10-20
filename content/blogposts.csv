@@ -1,2 +1,3 @@
-id,title,date,/body
-lipsum,Lorem Ipsum,2017-10-19,./content/blogposts/lipsum.html
+id,title,date,/body,show
+lipsum,Lorem Ipsum,2017-10-19,./content/blogposts/lipsum.html,
+equifax,Equifax and the Future of Identity Theft,2017-10-20,./content/blogposts/equifax.html,yes
