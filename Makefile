@@ -7,7 +7,7 @@ all: venv
 	cp css/*.css build/css/
 	cp images/*.jpg build/images
 	cp keys/*.pub build/keys/
-	cp papers/*.pdf build/papers/
+	cp papers/* build/papers/
 	cp images/favicon.ico ./build/
 
 venv: requirements.txt
