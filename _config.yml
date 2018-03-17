@@ -1,0 +1,4 @@
+source: .
+destination: ./build
+safe: true
+exclude: [cv/, Makefile]
