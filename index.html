@@ -42,7 +42,7 @@ published: true
 		</div>
 		<div class="row">
 		  <div class="col-md-12 col-sm-12">
-      {% for paper_hash in site.data.papers %}{% assign item = paper_hash[1] %}{% if item.frontpage %}
+      {% for item in site.data.papers %}{% if item.frontpage %}
 			<div class="inblog">
 			  <h3><a href="{{ item.url }}">
 				{{ item.title }} ({{ item.abbreviation }})
