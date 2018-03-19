@@ -45,7 +45,7 @@ published: true
       {% for item in site.data.papers %}{% if item.frontpage %}
 			<div class="inblog">
 			  <h3><a href="{{ item.url }}">
-				{{ item.title }} ({{ item.abbreviation }})
+				{{ item.title }} {{ item.abbreviation }}
 			  </a></h3>
 			  <p>{{ item.abstract }}</p>
 			</div>
