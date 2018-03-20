@@ -92,25 +92,31 @@ published: true
 
               {% assign sorted_service = site.data.service | sort:"key" | reverse %}
               <h4 id="professional-service">Professional Service</h4>
+              <div class="award">
               <ul>
               {% for item in sorted_service %}{% if item.type == 'professional' %}
                 <li>{{item.description}}</li>
               {% endif %}{% endfor %}
               </ul>
+			  </div>
 
               <h4 id="university-service">University Service</h4>
+              <div class="award">
               <ul>
               {% for item in sorted_service %}{% if item.type == 'university' %}
                 <li>{{item.description}}</li>
               {% endif %}{% endfor %}
               </ul>
+			  </div>
 
               <h4 id="invited-talks">Invited Talks</h4>
+			  <div class="award">
               <ul>
               {% for item in site.data.talks %}{% if item.type == 'invited' %}
                 <li>{{item.title}} at {{item.event}} on {{ item.date | date:"%Y-%m-%d" }}</li>
               {% endif %}{% endfor %}
               </ul>
+			  </div>
 
               <h4 id="professional-experience">Professional Experience</h4>
               {% for item in site.data.professional %}
