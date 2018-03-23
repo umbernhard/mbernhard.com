@@ -51,7 +51,7 @@ published: true
               <h4 id="top-tier-conference-papers">Selected Conference Papers</h4>
 {% for item in site.data.papers %}{% if item.top %}
               <div class="talk">
-                <p><a href="/papers/{{ item.filename }}">{{ item.title }}</a>
+                <p><a href="{{ item.url }}">{{ item.title }}</a>
                 </p>
 				        <ul>
 					       <li>{{ item.authors }}</li>
@@ -64,7 +64,7 @@ published: true
               <h4 id="other-peer-reviewed-publications">Other Peer-Reviewed Publications</h4>
 {% for item in site.data.papers %}{% unless item.top %}
               <div class="talk">
-                <p><a href="/papers/{{ item.filename }}">{{ item.title }}</a>
+                <p><a href="{{ item.url }}">{{ item.title }}</a>
                 </p>
 				        <ul>
 					       <li>{{ item.authors }}</li>
