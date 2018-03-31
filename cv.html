@@ -56,7 +56,6 @@ published: true
 				        <ul>
 					       <li>{{ item.authors }}</li>
 					       <li> {{ item.conference }} {{ item.abbreviation }}, {{ item.month }} {% if item.additional %} </li><li>&mdash; <em><b>{{item.additional}}</b></em> {% endif %}</li>
-                 {% if item.acceptance %}<li>Acceptance Rate: {{item.acceptance}}</li>{% endif %}
                 </ul>
 			        </div>
 {% endif %}{% endfor %}
