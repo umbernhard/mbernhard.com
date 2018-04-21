@@ -1,6 +1,6 @@
 ---
-title: Homepage
-permalink: /index.html
+title: Blog Index
+permalink: /blog.html
 published: true
 ---
 <!DOCTYPE html>
@@ -31,41 +31,26 @@ published: true
 		</div>
 	  </div>
 
+
 	  <div class="row">
 		<div class="col-md-12 col-sm-12 col-lg-10 col-lg-offset-1">
-		<div class="row">
-			<div class="col-md-3 col-sm-4 col-xs-4">
-			  <img src="./images/benjamin.vandersloot.jpg" class="col-md-12 col-sm-12 col-xs-12 col-lg-12 displayed"/>
-			</div>
-			<div class="col-md-9 col-sm-8 col-xs-8"><div class="front-page" style="padding-top: 10px">
-			{{ site.data.website }}
-			</div></div>
-		</div>
-		<div class="row">
-		  <div class="col-md-12 col-sm-12 col-lg-12">
-			<hr/>
-		  </div>
-		</div>
-		<div class="row">
-		  <div class="col-md-12 col-sm-12">
-      {% for item in site.data.papers %}{% if item.frontpage %}
-			<div class="inblog">
-			  <h3><a href="{{ item.url }}">
-				{{ item.title }} {{ item.abbreviation }}
-			  </a></h3>
-			  <p>{{ item.abstract }}</p>
-			</div>
-      {% endif %}{% endfor %}
-		   </div>
-		  </div>
-      <div class="row">
- 		<div class="col-md-12 col-sm-12 col-lg-12">
- 		  <hr/>
+		  {% for post in site.posts limit:1 %}
+		  	<h3><a href="{{ post.url }}">{{ post.title }} &ndash; {{ post.date | date: "%B %Y"}}</a></h3>
+		  
+		    {{ post.content }}
+
+ 		  	<hr/>
+		  {% endfor %}
  		</div>
- 	   </div>
- 	  <div class="row">
- 		<div class="col-md-12 col-sm-12">
- 		  Website design stolen shamelessly from <a href="https://zakird.com">Zakir Durumeric</a>.
+ 	  </div>
+	  <div class="row">
+		<div class="col-md-12 col-sm-12 col-lg-10 col-lg-offset-1">
+		  <h3>All posts</h3></br>
+		  <ul>
+		  {% for post in site.posts %}
+		  	<li style="margin-left: 40px"><a href="{{ post.url }}">{{ post.title }} &ndash; {{ post.date | date: "%B %Y"}}</a></li>
+		  {% endfor %}
+		  </ul>
  		</div>
  	  </div>
 		 </div>
