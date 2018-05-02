@@ -1,12 +1,12 @@
 - title: Scalable Remote Measurement of Application-Layer Censorship
   date: 2018-07-23
   authors: Benjamin VanderSloot, Allison McDonald, Will Scott, J. Alex Halderman, Roya Ensafi
-  conference: USENIX Security
-  abbreviation: (USENIX'18)
+  conference: To appear at USENIX Security
+  abbreviation: (Sec'18)
   month: July 2018
   acceptance: 19% (100/524)
   url: /
-  top: true
+  top: false
   frontpage: true
   abstract:
     |
