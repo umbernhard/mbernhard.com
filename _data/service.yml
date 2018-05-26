@@ -7,6 +7,9 @@
 - type: university
   key: 2016-05-01
   description: Vice President and Treasurer, Computer Science and Engineering Graduate student organization, University of Michigan, May 2016 – May 2017
+- type: university
+  key: 2018-05-25
+  description: Tor Exit Node Operator, May 2018 – present
 - type: professional
   key: 2016-09-01
   description: External reviewer, Internet Society Network and Distributed System Security Symposium (NDSS) 2017
