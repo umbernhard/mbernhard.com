@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/benvds
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://benvds.com
+  * I am benvds (https://keybase.io/benvds) on keybase.
+  * I have a public key ASBRlKXUzP5HpPQr5TadDGzKZANskBWuGS7d0G3cqdABugo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01205194a5d4ccfe47a4f42be5369d0c6cca64036c9015ae192eddd06ddca9d001ba0a",
+      "host": "keybase.io",
+      "kid": "01205194a5d4ccfe47a4f42be5369d0c6cca64036c9015ae192eddd06ddca9d001ba0a",
+      "uid": "103f5aff8217e2e67790e0f60b228119",
+      "username": "benvds"
+    },
+    "merkle_root": {
+      "ctime": 1537808627,
+      "hash": "d7888cfc02f574a647259ce55e43e79add364ed50b34eaef06fc0957d5c48b2516f11faaec2203fa7712e33dd39f83d0dcf8640753a414952d5d84b56c0bd3d4",
+      "hash_meta": "a411614699b13056f07feba48f513e20101663084feee203972335daecb58750",
+      "seqno": 3679250
+    },
+    "service": {
+      "entropy": "D8HTPbkhm8kznVHHGI5kv8Wz",
+      "hostname": "benvds.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.6.2"
+  },
+  "ctime": 1537808634,
+  "expire_in": 504576000,
+  "prev": "2b938cf6b3fda9ad841e8b3230d42c8e1d6f157fdfefc0921126207961e2a48d",
+  "seqno": 4,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgUZSl1Mz+R6T0K+U2nQxsymQDbJAVrhku3dBt3KnQAboKp3BheWxvYWTESpcCBMQgK5OM9rP9qa2EHosyMNQsjh1vFX/f78CSESYgeWHipI3EIHF74vESOZjaX4vtHbPCu0tjVu5ddPSK7XPJNqIBBkaVAgHCo3NpZ8RATYknraBKEEuDE4+iAC8VW+4sA8FuiM3kk6I6yMu4q5JAsR8c19BXRx8vtvTrh4qYyzNZ4Ol4iSsouI5L8hs/DKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIEQSZZ2qKcr+LyqmeDBB+ruA6msL1+nn8rQ+QztyZPxeo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/benvds
+
+==================================================================
