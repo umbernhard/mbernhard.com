@@ -4,7 +4,7 @@
   conference: ACM Internet Measurement Conference
   abbreviation: (IMC'18)
   month: November 2018
-  url: /
+  url: https://ensa.fi/papers/403forbidden_imc18.pdf
   top: true
   frontpage: false
 - title: "Quack: Scalable Remote Measurement of Application-Layer Censorship"
