@@ -33,13 +33,21 @@ published: true
 
 	  <div class="row">
 		<div class="col-md-12 col-sm-12 col-lg-10 col-lg-offset-1">
-      <h3><a href="{{ page.url }}">{{ page.title }} &ndash; {{ page.date | date: "%B %Y"}}</a></h3>
+
+
+		<div class="row">
+		  <div class="col-md-12 col-sm-12">
+
+        <h3><a href="{{ page.url }}">{{ page.title }} &ndash; {{ page.date | date: "%B %Y"}}</a></h3>
+
         {{ content }}
-      <br/>
+
+      <br>
         {{ page.date | date: "%-d %B %Y" }}
-      <hr/>
-		   </div>
+
+       </div>
 		  </div>
+
       <div class="row">
  		<div class="col-md-12 col-sm-12 col-lg-12">
  		  <hr/>
