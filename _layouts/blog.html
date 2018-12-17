@@ -25,7 +25,7 @@ published: true
 		<div class="col-md-8 col-sm-8 col-lg-6 col-lg-offset-1">
 			<h1><a href="/">Benjamin VanderSloot</a></h1>
 		 </div>
-	    <div class="col-md-4 col-sm-4 col-lg-4"><h3 class="text-right titlebar"><a href="/cv">CV</a> <a href="/">-</a> <a href="/blog">Blog</a></h3></div>
+		<div class="col-md-4 col-sm-4 col-lg-4"><h3 class="text-right titlebar"><a href="/cv">CV</a> <a href="/">-</a> <a href="/blog">Blog</a></h3></div>
 		<div class="col-md-12 col-sm-12 col-lg-10 col-lg-offset-1">
 		<hr style="margin-top:0px">
 		</div>
@@ -33,16 +33,18 @@ published: true
 
 	  <div class="row">
 		<div class="col-md-12 col-sm-12 col-lg-10 col-lg-offset-1">
-		  	<h3><a href="{{ page.url }}">{{ page.title }} &ndash; {{ page.date | date: "%B %Y"}}</a></h3>
-		  
-		    {{ content }}
-
-			</br>
-		    {{ page.date | date: "%-d %B %Y" }}
+      <h3><a href="{{ page.url }}">{{ page.title }} &ndash; {{ page.date | date: "%B %Y"}}</a></h3>
+        {{ content }}
+      <br/>
+        {{ page.date | date: "%-d %B %Y" }}
+      <hr/>
+		   </div>
+		  </div>
+      <div class="row">
+ 		<div class="col-md-12 col-sm-12 col-lg-12">
  		  <hr/>
  		</div>
- 	  </div>
-
+ 	   </div>
  	  <div class="row">
  		<div class="col-md-12 col-sm-12">
  		  Website design stolen shamelessly from <a href="https://zakird.com">Zakir Durumeric</a>.
