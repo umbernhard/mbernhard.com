@@ -7,7 +7,7 @@ tags: [authentication, standards, webauthn]
 
 WebAuthn seems like as powerful a contender to replace passwords as I have seen in my brief experience. I think it is really cool, but suspect that minor rough spots of usability will be huge sticking points with broad adoption. One spot I see is that people often share credentials for very reasonable reasons (shared accounts and needing emergency access to name a couple). This doesn't seem possible in the context of WebAuthn as designed, but luckily it allows extensions!
 
-[Here is my draft extension.](/files/delegation.markdown)
+[Here is my draft extension.](https://github.com/bvandersloot/webauthn-delegation/blob/master/delegation.md)
 
 Something else I realized while drafting it- this allows for the creation of backup tokens that can be created at registration time and dumped en-masse with no user overhead.
 
