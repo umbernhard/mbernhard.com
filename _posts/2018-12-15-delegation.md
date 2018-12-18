@@ -9,8 +9,8 @@ WebAuthn seems like as powerful a contender to replace passwords as I have seen 
 
 [Here is my draft extension.](/files/delegation.markdown)
 
-Something else I realized while drafting it- this allows for the creation of backup tokens that can be dumped en-masse and created at registration time with very little user overhead.
+Something else I realized while drafting it- this allows for the creation of backup tokens that can be created at registration time and dumped en-masse with no user overhead.
 
-Disclaimer: I am not a cryptographer, so who knows what evil lurks within. But there isn't moon-math or anything too exotic here.
+Disclaimer: I am not a cryptographer, so who knows what evil lurks within. But there isn't moon-math or anything too exotic here. 
 
-The rough cut is as follows: when a client is registering a new key with the server, it also has the key sign a value that is HMAC(restrictions, secretKey). The HMAC and restrictions are shipped off for the server to hold onto. Now anyone that can prove ownership of the secretKey within the restrictions can register a new key with that account. For now these restrictions are how long the token should last, how many uses it gets, and and what public keys work with it. Broadly, this is a tool to create trusted tokens that exist off of the Yubikey you may be using day-to-day.
+The rough cut is as follows: when a client is registering a new key with the server, it also has the key sign a value that is HMAC(restrictions, secretKey). The HMAC and restrictions are shipped off for the server to hold onto. Now anyone that can prove ownership of the secretKey within the restrictions can register a new key with that account. For now these restrictions are how long the token should last, how many uses it gets, and what public keys work with it. Broadly, this is a tool to create trusted tokens that exist off of the Yubikey you may be using day-to-day, bootstrapping trust from registration.
