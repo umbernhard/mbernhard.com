@@ -1,14 +1,12 @@
 - sort: 2014
   dates: June 2014 – Aug 2014
-  title: Software Development Engineer Intern
-  organization: Microsoft, Windows Operating Systems Services Group
-  responsibilities:
-    - Designed, deployed redundant storage layer for reliablility in memcached-like service
-    - Worked with other teams in the organization to promote use of designed storage stack
+  year: 2014
+  title: SDE Intern
+  organization: Microsoft, Windows OS Services Group
+  responsibility: Designed redundant storage layer for reliablility in memcached-like service
 - sort: 2012
   dates: May 2012 – Aug 2012
+  year: 2012
   title: Software Engineer Intern
   organization: Qualcomm Incorporated, Windows 8 Group
-  responsibilities:
-    - Designed a new test automation framework
-    - Educated test technicians and engineers how to use the developed framework
+  responsibility: Designed a new fuzzing framework for GUI-driven applications

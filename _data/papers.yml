@@ -1,7 +1,7 @@
 - title: "403 Forbidden: A Global View of CDN Geoblocking"
   date: 2018-11-01
   authors: Allison McDonald, Matthew Bernhard, Luke Valenta, Benjamin VanderSloot, Will Scott, Nick Sullivan, J. Alex Halderman, Roya Ensafi
-  conference: ACM Internet Measurement Conference
+  conference: Proceedings of the ACM Internet Measurement Conference
   abbreviation: (IMC'18)
   month: November 2018
   url: https://ensa.fi/papers/403forbidden_imc18.pdf
@@ -10,11 +10,11 @@
 - title: "Quack: Scalable Remote Measurement of Application-Layer Censorship"
   date: 2018-07-23
   authors: Benjamin VanderSloot, Allison McDonald, Will Scott, J. Alex Halderman, Roya Ensafi
-  conference: USENIX Security
+  conference: Proceedings of the USENIX Security Symposium
   abbreviation: (Sec'18)
   month: July 2018
   acceptance: 19% (100/524)
-  url: /papers/quack-security18.pdf
+  url: https://benvds.com/papers/quack-security18.pdf
   top: true
   frontpage: true
   abstract:
@@ -25,29 +25,29 @@
 - title: An ISP-Scale Deployment of TapDance
   date: 2017-08-01
   authors: Sergey Frolov, Fred Douglas, Will Scott, Allison McDonald, Benjamin VanderSloot, Rod Hynes, Adam Kruger, Michalis Kallitsis, David G. Robinson, Steve Schultze, Nikita Borisov, J. Alex Halderman, and Eric Wustrow
-  conference: USENIX Workshop on Free and Open Communications on the Internet
+  conference: Proceedings of the USENIX Workshop on Free and Open Communications on the Internet
   abbreviation: (FOCI'17)
   month: August 2017
-  url: /papers/isp-tapdance.pdf
+  url: https://benvds.com/papers/isp-tapdance.pdf
   top: false
   frontpage: false
 - title: A Security Analysis of Police Computer Systems
   date: 2016-12-01
   authors: Benjamin VanderSloot, Stuart Wheaton, and J. Alex Halderman
-  conference: IEEE Privacy, Security, and Trust
+  conference: Proceedings of the IEEE Annual Conference on Privacy, Security, and Trust
   abbreviation: (PST'17)
   month: December 2017
-  url: /papers/police.pdf
+  url: https://benvds.com/papers/police.pdf
   top: false
   frontpage: false
 - title: Towards a Complete View of the Certificate Ecosystem
   date: 2016-09-01
   authors: Benjamin VanderSloot, Johanna Amann, Matthew Bernhard, Zakir Durumeric, Michael Bailey, J. Alex Halderman
-  conference: ACM Internet Measurement Conference
+  conference: Proceedings of the ACM Internet Measurement Conference
   abbreviation: (IMC'16)
   month: November 2016
   acceptance: 25% (46/184)
-  url: /papers/https-perspectives-imc16.pdf
+  url: https://benvds.com/papers/https-perspectives-imc16.pdf
   top: true
   frontpage: true
   abstract:
@@ -68,12 +68,12 @@
     measurement adopt this new vantage.
 - title: "DDoSCoin: Cryptocurrency with a Malicious Proof-of-Work"
   date: 2016-07-01
-  authors: Benjamin VanderSloot, Eric Wustrow
-  conference: USENIX Workshop on Offensive Technologies
+  authors: Eric Wustrow and Benjamin VanderSloot
+  conference: Proceedings of the USENIX Workshop on Offensive Technologies
   abbreviation: (WOOT'16)
   month: August 2016
   acceptance: 47% (21/44)
-  url: /papers/woot16-paper-wustrow.pdf
+  url: https://benvds.com/papers/woot16-paper-wustrow.pdf
   top: false
   frontpage: true
   abstract:
@@ -94,12 +94,12 @@
 - title: "Imperfect Forward Secrecy: How Diffie-Hellman Fails in Practice"
   date: 2015-10-01
   authors: David Adrian, Karthikeyan Bhargavan, Zakir Durumeric, Pierrick Gaudry, Matthew Green, J. Alex Halderman, Nadia Heninger, Drew Springall, Emmanuel Thomé, Luke Valenta, Benjamin VanderSloot, Eric Wustrow, Santiago Zanella-Beguelin, and Paul Zimmermann
-  conference: ACM Computer and Communications Security
+  conference: Proceedings of the ACM Conference on Computer and Communications Security
   abbreviation: (CCS'15)
   month: October 2015
   acceptance:  20% (128/646)
   additional: Best Paper Award
-  url: /papers/imperfect-forward-secrecy-ccs15.pdf
+  url: https://benvds.com/papers/imperfect-forward-secrecy-ccs15.pdf
   top: true
   frontpage: true
   abstract:
@@ -125,9 +125,9 @@
 - title: A Memory Rename Table to Reduce Energy and Improve Performance
   date: 2014-08-01
   authors: Joseph Pusdesris, Benjamin VanderSloot, Trevor Mudge
-  conference: ACM/IEEE International Symposium on Low Power Electronics and Design
+  conference: Proceedings of the ACM/IEEE International Symposium on Low Power Electronics and Design
   abbreviation: (ISLPED'14)
   month: August 2014
-  url: /papers/rename.pdf
+  url: https://benvds.com/papers/rename.pdf
   top: false
   frontpage: false

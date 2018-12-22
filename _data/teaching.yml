@@ -3,31 +3,22 @@
   title: Lecturer
   institution: University of Michigan
   number: EECS 388
-  responsibilities:
-    - Delivered one third of the lectures to a 380 student course
-    - Held office hours to reinforce knowledge and assist on homeworks and projects
-    - Oversaw the deployment of improvements to this long-standing course
+  responsibilities: One of three instructors for a 380 student course. Delivered lectures, held office hours, and deployed improvements to this long-standing course.
 - course: Introduction to Computer Security
   term: Fall 2017
   title: Graduate Student Instructor
   institution: University of Michigan
   number: EECS 388
-  responsibilities:
-    - Delivered binary exploitation and control flow integrity lectures
-    - Conducted weekly discussion sections to reinforce course material
-    - Held office hours to reinforce knowledge and assist on homeworks and projects
-    - Released and graded multiple projects and homeworks
+  responsibilities: Delivered binary exploitation and control flow integrity lectures, conducted weekly discussion sections, held office hours, and released and graded multiple projects and homeworks.
 - course: Introduction to Computer Security
-  term: Spring 2017
+  term: Winter 2017
   title: Guest Lecturer
   institution: University of Michigan
   number: EECS 388
-  responsibilities:
-    - Delivered a lecture on physical security
+  responsibilities: Delivered lectures on physical security and Cyberconfilict from an international policy perspective.
 - course: Computer and Network Security
   term: Fall 2016
   title: Guest Lecturer
   institution: University of Michigan
   number: EECS 588
-  responsibilities:
-    - Delivered a lecture on Cyberconfilict from an international policy perspective
+  responsibilities: Delivered a lecture on cryptography fundamentals to provide background for systems security 

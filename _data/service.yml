@@ -6,16 +6,16 @@
   description: Dissonance Speaker Series, Founding Committee Member
 - type: university
   key: 2016-05-01
-  description: Vice President and Treasurer, Computer Science and Engineering Graduate student organization, University of Michigan, May 2016 – May 2017
+  description: Vice President and Treasurer, Computer Science and Engineering Graduate student organization, University of Michigan, May 2016 -- May 2017
 - type: university
   key: 2018-05-25
   description: Tor Exit Node Operator, May 2018 – present
-- type: professional
+- type: professional-external
   key: 2016-09-01
-  description: External reviewer, Internet Society Network and Distributed System Security Symposium (NDSS) 2017
-- type: professional
+  description: Internet Society Network and Distributed System Security Symposium (NDSS) 2017
+- type: professional-external
   key: 2017-06-01
-  description: External reviewer, ACM Conference on Computer and Communications Security (CCS) 2017
-- type: professional
+  description: ACM Conference on Computer and Communications Security (CCS) 2017
+- type: professional-shadow
   key: 2018-07-01
-  description: Shadow Program Committee Member, ACM Internet Measurement Conference (IMC) 2018
+  description: ACM Internet Measurement Conference (IMC) 2018
