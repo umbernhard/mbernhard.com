@@ -1,4 +1,10 @@
 |
-  <p>I am a Ph.D. Candidate in Computer Science and Engineering at the University of Michigan, where I am advised by J. Alex Halderman. I graduated from the University of Michigan in 2015 as a Bachelor of Science, Engineering in Computer Science with a Mathematics Minor. I can be reached at <a href="mailto:benvds@umich.edu">benvds@umich.edu</a>, and my <a href="/cv">CV is available here</a>.</p>
-
-  <p>I am interested in Computer Security and Privacy broadly. My research interests are problems that affect policy discussions and the use of measurement as a tool to make precise claims about the Internet in these discussions. Currently, I am working on providing additional insight into the phenomenon of Internet censorship. Previous work includes a meta-measurement study of the HTTPS certificate ecosystem and the proposal of a new, malicious cryptocurrency. As part of this, I am a contributer to the Censys Search Engine.</p>
+    <p>
+    My research focuses on computer security and privacy, with a focus on systems that benefit typical users. I have helped detect and evade censorship, measured geoblocking, helped uncover issues in widespread Internet protocols, and helped prevent certificate misissuance.
+    I am also interested in answering questions about practical properties of privacy systems and understanding the concrete improvement in security with different practices.
+    </p>
+    <p>
+    I enjoy teaching, and have had a few opportunities to do so as a grad student. I lectured one semester and taught a discussion section another.
+    The challenge I believe is most important to the effectiveness of a teacher is to provide significance beyond transactional grading.
+    While I am not perfect at this I continue to try to improve, e.g. by making course material tie into practical projects and making attendance voluntary.
+    </p>

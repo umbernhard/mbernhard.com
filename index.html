@@ -25,7 +25,7 @@ published: true
 		<div class="col-md-8 col-sm-8 col-lg-6 col-lg-offset-1">
 			<h1><a href="/">Benjamin VanderSloot</a></h1>
 		 </div>
-		<div class="col-md-4 col-sm-4 col-lg-4"><h3 class="text-right titlebar"><a href="/cv">CV</a> <a href="/">-</a> <a href="/blog">Blog</a></h3></div>
+		<div class="col-md-4 col-sm-4 col-lg-4"><h3 class="text-right titlebar"><a href="https://benvds.com/files/cv.pdf">CV</a> <a>-</a> <a href="https://benvds.com/blog">Blog</a></h3></div>
 		<div class="col-md-12 col-sm-12 col-lg-10 col-lg-offset-1">
 		<hr style="margin-top:0px">
 		</div>
@@ -36,9 +36,16 @@ published: true
 		<div class="row">
 			<div class="col-md-3 col-sm-4 col-xs-4">
 			  <img src="./images/benjamin.vandersloot.jpg" class="col-md-12 col-sm-12 col-xs-12 col-lg-12 displayed"/>
+			<div style="margin-top: 4px; text-align: center">
+			<a href="mailto:benvds@umich.edu"><img src="./images/envelope.png" height="16" style="margin-left: 10px"/></a>
+			<a href="https://twitter.com/benvandersloot"><img src="./images/twitter.png" height="16" style="margin-left: 10px"/></a>
+			<a href="https://github.com/bvandersloot"><img src="./images/github.png" height="16" style="margin-left: 10px"/></a>
 			</div>
-			<div class="col-md-9 col-sm-8 col-xs-8"><div class="front-page" style="padding-top: 10px">
-			{{ site.data.website }}
+			</div>
+			<div class="col-md-9 col-sm-8 col-xs-8"><div class="front-page" style="padding-top: 10px;"> 
+				<div style="position: absolute; top: 50%; ">
+					{{ site.data.website }}
+				</div>
 			</div></div>
 		</div>
 		<div class="row">
@@ -47,7 +54,16 @@ published: true
 		  </div>
 		</div>
 		<div class="row">
+		  <div class="col-md-6 col-sm-6 col-lg-6">
+		  	<h3 class="text-left">Selected Papers</h3>
+		  </div>
+		  <div class="col-md-6 col-sm-6 col-lg-6" style="text-align: right;  vertical-align: bottom; margin-top: 20pt;">
+	  	    <a href="https://benvds.com/papers">All papers >></a>
+		  </div>
+		</div>
+		<div class="row">
 		  <div class="col-md-12 col-sm-12">
+
       {% for item in site.data.papers %}{% if item.frontpage %}
 			<div class="inblog">
 			  <h3><a href="{{ item.url }}">
@@ -56,6 +72,7 @@ published: true
 			  <p>{{ item.abstract }}</p>
 			</div>
       {% endif %}{% endfor %}
+
 		   </div>
 		  </div>
       <div class="row">
@@ -65,7 +82,7 @@ published: true
  	   </div>
  	  <div class="row">
  		<div class="col-md-12 col-sm-12">
- 		  Website design stolen shamelessly from <a href="https://zakird.com">Zakir Durumeric</a>.
+ 		  Website design stolen shamelessly from <a href="https://zakird.com">Zakir Durumeric</a>, and modified to suit.
  		</div>
  	  </div>
 		 </div>
