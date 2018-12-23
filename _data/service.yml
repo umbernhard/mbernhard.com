@@ -1,6 +1,6 @@
 - type: university
   key: 2014-12-01
-  description: Chapter President, Eta Kappa Nu (IEEE Honor Society), May 2014 – December 2014
+  description: Chapter President, Eta Kappa Nu (IEEE Honor Society), May 2014 -- December 2014
 - type: university
   key: 2015-12-01
   description: Dissonance Speaker Series, Founding Committee Member
@@ -9,7 +9,7 @@
   description: Vice President and Treasurer, Computer Science and Engineering Graduate student organization, University of Michigan, May 2016 -- May 2017
 - type: university
   key: 2018-05-25
-  description: Tor Exit Node Operator, May 2018 – present
+  description: Tor Exit Node Operator, May 2018 -- present
 - type: professional-external
   key: 2016-09-01
   description: Internet Society Network and Distributed System Security Symposium (NDSS) 2017
