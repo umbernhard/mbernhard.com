@@ -1,3 +1,4 @@
+.PHONY: files/cv.pdf
 all: files/cv.pdf
 	jekyll build
 
@@ -9,3 +10,4 @@ clean:
 	rm -rf build
 	rm files/cv.pdf
 	rm cv/cv.*
+
