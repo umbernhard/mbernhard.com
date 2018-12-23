@@ -1,0 +1,225 @@
+{% assign name = '{\bf Benjamin VanderSloot}' %}
+
+% template from http://rpi.edu/dept/arc/training/latex/resumes/
+\documentclass[margin,11pt]{res} %ethertex: https://raw.githubusercontent.com/ewust/resume/master/res.cls
+\usepackage{fullpage}
+\usepackage{fancyhdr}
+\usepackage{color}
+\definecolor{MyDarkBlue}{rgb}{0.05,0,0.5} 
+\usepackage[
+  letterpaper=true,breaklinks=true,colorlinks=true,linkcolor=black,%
+citecolor=black,urlcolor=MyDarkBlue,bookmarks=false,bookmarksopen=false,%
+  pdftex]{hyperref}
+
+\textwidth=5.2in
+\setlength{\topmargin}{-.125in}
+\setlength{\textheight}{9in} %increase text height to fit on 1-page
+\setlength{\parskip}{0.8em}
+
+\usepackage[T1]{fontenc}
+\usepackage{kpfonts}
+\usepackage{changepage}
+
+\usepackage{amssymb}
+%\renewcommand{labelitemi}{\hfill$\square$}
+\newcommand{\sqitem}{\item[\tiny$\blacksquare$]}
+\newcommand{\sqlist}{\begin{list}{$\bullet$}
+  { \setlength{\itemsep}{0pt}
+        \setlength{\parsep}{0pt}
+        \setlength{\topsep}{0pt}
+        \setlength{\partopsep}{0pt}
+        \setlength{\leftmargin}{6.0em}
+        %\setlength{\labelwidth}{5em}
+        \setlength{\labelsep}{2.5em} } }
+\newcommand{\sqend}{\end{list}}
+\newcommand{\inwidth}{1in}
+\renewcommand{\medskip}{}
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand\labelitemi{---}
+\newenvironment{absolutelynopagebreak}
+  {\par\nobreak\vfil\penalty0\vfilneg
+   \vtop\bgroup}
+  {\par\xdef\tpd{\the\prevdepth}\egroup
+   \prevdepth=\tpd}
+
+\begin{document}
+
+\begin{adjustwidth}{-1.3in}{0pt}
+\noindent{\LARGE\bf Benjamin VanderSloot}
+\vspace{20pt}
+
+\noindent 
+\parbox[m]{4in}{
+Graduate Student \\
+University of Michigan\\
+Computer Science \& Engineering\\
+2260 Hayward Street\\
+Ann Arbor, MI  48109
+}
+\begin{tabular}{ll}
+{Web}:&\url{https://benvds.com}\\
+{Email}:&benvds@umich.edu\\
+{Phone}:& (269) 903-1612
+\end{tabular}
+\vspace{10pt}
+\end{adjustwidth}
+
+\section{\large Education}
+
+        \emph{University of Michigan}\\
+        Ph.D. in Computer Science, Expected Spring 2020\\
+        \emph{Advisor:} J. Alex Halderman
+		
+        \emph{University of Michigan}\\
+        M.S. in Computer Science, Spring 2018
+
+        \emph{University of Michigan}\\
+        B.S.E. in Computer Science, Minor in Mathematics, Spring 2015\\
+		\emph{summa cum laude}
+
+
+\vspace{6pt}
+\section{\large Research}
+
+My research focuses on computer security and privacy, with a focus on systems that benefit typical users. I have helped detect and evade censorship, measured geoblocking, helped uncover issues in widespread Internet protocols, and helped prevent certificate misissuance.
+I am also interested in answering questions about practical properties of privacy systems and understanding the concrete improvement in security with different practices.
+
+\vspace{6pt}
+\section{\large Publications}
+
+{% for item in papers %}
+\begin{samepage}
+{\bf \href{ {{item.url}} }{ {{item.title}} } } \\
+{{item.authors | replace: "Benjamin VanderSloot", name }}\\
+In \emph{\hspace{0pt}{{item.conference}} } \\
+\textbf{ {{item.abbreviation}} }, {{item.month}}.
+{% if item.additional %} \\ ---{\bf {{item.additional}} } {% endif %}
+\end{samepage}
+{% endfor %}
+
+\vspace{6pt}
+\section{\large Broader\\Impact}
+
+\begin{samepage}
+\begin{absolutelynopagebreak}
+\textbf{\href{https://censoredplanet.com}{New Methods for Censorship Measurement}} (2018)\\
+Censored Planet is a project that monitors censorship globally using existing Internet infrastructure, without coordinating volunteers in-country. We developed a new technique to monitor application-layer censorship. The project has observed changes in censorship practices around geopolitical events.
+\end{absolutelynopagebreak}
+\end{samepage}
+
+\begin{samepage}
+\begin{absolutelynopagebreak}
+\textbf{\href{https://refraction.networking}{Continuous Deployment of Anticensorship Tools}} (2018)\\
+Decoy Routing techniques are a fundamentally different form of censorship circumvention that were initially developed in 2011. However, they require ISPs to deploy hardware on their network. We have an ongoing deployment in a partner ISP that provides open Internet access to users in censored countries.
+\end{absolutelynopagebreak}
+\end{samepage}
+
+\begin{samepage}
+\begin{absolutelynopagebreak}
+\textbf{\href{https://benvds.com/papers/police.pdf}{Protecting a Local Police Department}} (2016)\\
+We demonstrated attacks against a local police department's computer systems that could have compromised the confidentiality and integrity of criminal justice information. This was performed with the permission of the department we analyzed and all vulnerabilities were corrected..
+\end{absolutelynopagebreak}
+\end{samepage}
+
+%\textbf{\href{https://benvds.com/}{Helping Certificate Transparency}} (2015)\\
+%blah 
+
+\vspace{6pt}
+%\newpage
+\section{\large Honors and Awards}
+
+{% for item in awards %}
+\begin{samepage}
+{\bf {{item.title}} }
+{% if item.reason %} for {{item.reason}}{% endif %}
+\end{samepage}
+{% endfor %}
+
+
+\vspace{6pt}
+\section{\large Invited Talks}
+
+{% for item in talks %}
+{% if item.type == 'invited' %} 
+\begin{samepage}
+{\bf {{item.title}}}
+at {{item.event}}, {{item.date | date: "%B %Y"}}.
+\end{samepage}
+{% endif %}
+{% endfor %}
+
+{% assign sorted_service = service | sort:"key" | reverse %}
+\vspace{6pt}
+\section{\large Professional Service}
+
+\vspace{-16pt}
+\subsection{Shadow Reviewer}
+\begin{itemize}
+{% for item in sorted_service %}
+{% if item.type == "professional-shadow" %} 
+\item {{item.description}}
+{% endif %}
+{% endfor %}
+\end{itemize}
+
+\vspace{-16pt}
+\subsection{External Reviewer}
+\begin{itemize}
+{% for item in sorted_service %}
+{% if item.type == "professional-external" %} 
+\item {{item.description}}
+{% endif %}
+{% endfor %}
+\end{itemize}
+
+\vspace{6pt}
+\section{\large University Service}
+
+{% for item in sorted_service %}
+{% if item.type == "university" %} 
+{{item.description}}
+{% endif %}
+{% endfor %}
+
+\vspace{6pt}
+\section{\large Teaching}
+
+{\bf Teaching Philosophy}\\
+To be an effective teacher you need to provide significance beyond transactional grading.
+
+
+{% for item in teaching %}
+\begin{samepage}
+{\bf\hspace{0pt}{{item.title}},  {{item.course}}}  \emph{({{item.term}})}\\
+\emph{\hspace{0pt}{{item.number}}, {{item.institution}}}\\
+{{item.responsibilities}}
+\end{samepage}
+
+{% endfor %}
+
+\vspace{6pt}
+\section{\large Patents}
+
+{% for item in patents %}
+{{item}}
+{% endfor %}
+
+\vspace{6pt}
+\section{\large Internships}
+
+{% for item in professional %}
+\begin{samepage}
+\emph{\hspace{0pt}{{item.organization}}} --- {{item.title}} ({{item.year}}) \\
+{{item.responsibility}}
+\end{samepage}
+
+{% endfor %}
+
+
+\end{document}
+

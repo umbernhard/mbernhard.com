@@ -1,0 +1,24 @@
+# encoding: utf-8
+
+require "yaml"
+require "liquid"
+require "fileutils"
+ext = ".yml"
+
+task :build do
+  context = {}
+  Dir["../_data/*.yml"].each do |file|
+    client = YAML.load_file(file)
+	key = File.basename file, ext
+	context[key] = client
+  end
+  template = Liquid::Template.parse(File.open("template.tex", "r:UTF-8") { |f| f.read })
+  File.open("cv.tex", "w") do |f|
+    f.write template.render(context)
+  end
+  puts "Rendered template"
+  `pdflatex -halt-on-error cv.tex`
+  puts "Built"
+end
+
+task :default => :build
