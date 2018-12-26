@@ -103,6 +103,22 @@ In \emph{\hspace{0pt}{{item.conference}} } \\
 {% endfor %}
 
 \vspace{6pt}
+\section{\large Teaching}
+
+{\bf Teaching Philosophy}\\
+To be an effective teacher you need to provide significance beyond transactional grading.
+
+
+{% for item in teaching %}
+\begin{samepage}
+{\bf\hspace{0pt}{{item.title}},  {{item.course}}}  \emph{({{item.term}})}\\
+\emph{\hspace{0pt}{{item.number}}, {{item.institution}}}\\
+{{item.responsibilities}}
+\end{samepage}
+
+{% endfor %}
+
+\vspace{6pt}
 \section{\large Broader\\Impact}
 
 \begin{samepage}
@@ -184,22 +200,6 @@ at {{item.event}}, {{item.date | date: "%B %Y"}}.
 {% if item.type == "university" %} 
 {{item.description}}
 {% endif %}
-{% endfor %}
-
-\vspace{6pt}
-\section{\large Teaching}
-
-{\bf Teaching Philosophy}\\
-To be an effective teacher you need to provide significance beyond transactional grading.
-
-
-{% for item in teaching %}
-\begin{samepage}
-{\bf\hspace{0pt}{{item.title}},  {{item.course}}}  \emph{({{item.term}})}\\
-\emph{\hspace{0pt}{{item.number}}, {{item.institution}}}\\
-{{item.responsibilities}}
-\end{samepage}
-
 {% endfor %}
 
 \vspace{6pt}
