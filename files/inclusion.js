@@ -1,2 +1,1 @@
-var image = document.getElementsByClassName("image1");
-image.src = "https://benvds.com/images/envelope.png"
+document.getElementsByClassName("image1")[0].src = "https://benvds.com/images/envelope.png";
