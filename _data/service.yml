@@ -19,3 +19,6 @@
 - type: professional-shadow
   key: 2018-07-01
   description: ACM Internet Measurement Conference (IMC) 2018
+- type: professional-external
+  key: 2019-03-01
+  description: USENIX Security Symposium (Security) 2019
