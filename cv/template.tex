@@ -1,238 +1,275 @@
-{% assign name = '{\bf Matthew Bernhard}' %}
+{% assign name = '\uline{Matthew Bernhard}' %}
 
-% template from http://rpi.edu/dept/arc/training/latex/resumes/
-\documentclass[margin,11pt]{res} %ethertex: https://raw.githubusercontent.com/ewust/resume/master/res.cls
+    {% raw %}
+\documentclass[11pt]{article}
 \usepackage{fullpage}
-\usepackage{fancyhdr}
 \usepackage{color}
-\definecolor{MyDarkBlue}{rgb}{0.05,0,0.5} 
+\definecolor{darkblue}{rgb}{0.0,0.0,0.5}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage[normalem]{ulem}
+\usepackage{revnum}%ethertex-once: http://www.math.harvard.edu/graduate/vitae/revnum.sty
+\usepackage{fancyhdr}
+\usepackage{hyphenat}
+\usepackage[T1]{fontenc}
+\usepackage[oldstylenums,rmx,largesmallcaps]{kpfonts}
+\usepackage[protrusion=true,expansion=auto]{microtype}
+\definecolor{MyDarkBlue}{rgb}{0.033,0,0.33} 
 \usepackage[
-  letterpaper=true,breaklinks=true,colorlinks=true,linkcolor=black,%
-citecolor=black,urlcolor=MyDarkBlue,bookmarks=false,bookmarksopen=false,%
+  letterpaper=true,breaklinks=true,colorlinks=true,linkcolor=black,
+citecolor=black,urlcolor=MyDarkBlue,bookmarks=false,bookmarksopen=false,
+  pdfauthor={},
+  pdftitle={CV - Matthew Bernhard},
   pdftex]{hyperref}
 
-\textwidth=5.2in
-\setlength{\topmargin}{-.125in}
-\setlength{\textheight}{9in} %increase text height to fit on 1-page
-\setlength{\parskip}{0.8em}
-
-\usepackage[T1]{fontenc}
-\usepackage{kpfonts}
-\usepackage{changepage}
-
-\usepackage{amssymb}
-%\renewcommand{labelitemi}{\hfill$\square$}
-\newcommand{\sqitem}{\item[\tiny$\blacksquare$]}
-\newcommand{\sqlist}{\begin{list}{$\bullet$}
-  { \setlength{\itemsep}{0pt}
-        \setlength{\parsep}{0pt}
-        \setlength{\topsep}{0pt}
-        \setlength{\partopsep}{0pt}
-        \setlength{\leftmargin}{6.0em}
-        %\setlength{\labelwidth}{5em}
-        \setlength{\labelsep}{2.5em} } }
-\newcommand{\sqend}{\end{list}}
-\newcommand{\inwidth}{1in}
-\renewcommand{\medskip}{}
-
-\pagestyle{fancy}
-\fancyhead{}
-\fancyfoot{}
-\fancyfoot[R]{\thepage}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand\labelitemi{---}
-\newenvironment{absolutelynopagebreak}
-  {\par\nobreak\vfil\penalty0\vfilneg
-   \vtop\bgroup}
-  {\par\xdef\tpd{\the\prevdepth}\egroup
-   \prevdepth=\tpd}
+\pdfglyphtounicode{zerooldstyle}{0030}
+\pdfglyphtounicode{oneoldstyle}{0031}
+\pdfglyphtounicode{twooldstyle}{0032}
+\pdfglyphtounicode{threeoldstyle}{0033}
+\pdfglyphtounicode{fouroldstyle}{0034}
+\pdfglyphtounicode{fiveoldstyle}{0035}
+\pdfglyphtounicode{sixoldstyle}{0036}
+\pdfglyphtounicode{sevenoldstyle}{0037}
+\pdfglyphtounicode{eightoldstyle}{0038}
+\pdfglyphtounicode{nineoldstyle}{0039}
+\pdfgentounicode=1
 
 \begin{document}
 
-\begin{adjustwidth}{-1.3in}{0pt}
-\noindent{\LARGE\bf Benjamin VanderSloot}
-\vspace{20pt}
+\fancyhead{}
+\fancyfoot[F]{\hfill\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}\thispagestyle{fancy}
+\newcommand{\cvsection}[1]{{\vspace{8pt}{\Large\bf #1}}}
+\newdimen{\leftsize}
+\newdimen{\rightsize}
+\leftsize=0.5in
+\rightsize=5.5in
+\parindent=0pt
+\setlength{\leftmargini}{\leftsize}
+\addtolength{\leftmargini}{3pt}
+\renewcommand{\labelenumi}{[\arabic{enumi}]}
+\urlstyle{rm}
+\def\textsb#1{{\fontseries{sb}\selectfont #1}}
 
-\noindent 
-\parbox[m]{4in}{
-Graduate Student \\
-University of Michigan\\
-Computer Science \& Engineering\\
-2260 Hayward Street\\
-Ann Arbor, MI  48109
+\newif\ifsocial\socialfalse
+{\parbox[b]{3.55in}{
+\fontsize{18pt}{22pt}\selectfont
+\textbf{\textls[15]{Matthew \kern2.5pt Bernhard}}\vspace{2pt}
+
+\setlength\leftskip{0pt}\setlength\rightskip{-\leftskip}\setlength\parfillskip{\leftskip}
+\raggedright
+
+\fontsize{12pt}{16pt}\selectfont
+Ph.D. Candidate, Computer Science and Engineering\\
+{\textsl{University of Michigan}}
+}}
+\hfill
+{\parbox[b]{2.0in}{\raggedleft\fontsize{10pt}{12pt}\selectfont
+\textls[40]{2260 Hayward Street}\\
+\textls[-30]{Ann Arbor, \textsc{mi} 48109 \textsc{usa}}\vspace{1pt}
+\textls[10]{matber@umich.edu}}
+
+\vspace{8pt}
+
+{\fontsize{12pt}{16pt}\selectfont
+    \textls[20]{{\today}}\hfill
+\textls[20]{
+        \href{http://mbernhard.com}{mbernhard.com}%
+    }
 }
-\begin{tabular}{ll}
-{Web}:&\url{https://benvds.com}\\
-{Email}:&benvds@umich.edu\\
-{Phone}:& (269) 903-1612
-\end{tabular}
-\vspace{10pt}
-\end{adjustwidth}
+}
 
-\section{\large Education}
+\normalsize\selectfont
+\smallskip
 
-        \emph{University of Michigan}\\
-        Ph.D. in Computer Science, Expected Spring 2020\\
-        \emph{Advisor:} J. Alex Halderman
+\setstretch{1.1}
+
+\vspace*{8pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cvsection{Research Overview}
+\vspace{-2pt}
+
+\begin{itemize}[label={},leftmargin=0.25in,labelsep=0pt]\addtolength{\itemsep}{-0.25\baselineskip}
+
+\item My research focuses on areas where the security and privacy implications of sophisticated systems impacts users in the real world. My interests include election security, usability, human-computer interaction, censorship measurement and resistance, Internet measurement, cryptography, statistics, and systems security. I'm also interested in the intersection of computer science, psychology, politics, and policy.
+
+\end{itemize}
+
+\cvsection{Education}
+\begin{itemize}[label={--\ },leftmargin=0.25in,labelsep=0.1625em]\addtolength{\itemsep}{-0.25\baselineskip}
+
+        \item Ph.D in Computer Science, University of Michigan, Expected Spring 2021\\
+        Advisor: J. Alex Halderman
 		
-        \emph{University of Michigan}\\
-        M.S. in Computer Science, Spring 2018
+        \item M.S. in Computer Science, University of Michigan, Summer 2018
 
-        \emph{University of Michigan}\\
-        B.S.E. in Computer Science, Minor in Mathematics, Spring 2015\\
-		\emph{summa cum laude}
+        \item B.A. in Computer Science, Rice University, Spring 2015\\
+        Advisor: Dan S. Wallach
+        
+\end{itemize}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\vspace{6pt}
-\section{\large Research}
-
-My research focuses on computer security and privacy, with a focus on systems that benefit typical users. I have helped detect and evade censorship, measured geoblocking, helped uncover issues in widespread Internet protocols, and helped prevent certificate misissuance.
-I am also interested in answering questions about practical properties of privacy systems and understanding the concrete improvement in security with different practices.
-
-\vspace{6pt}
-\section{\large Publications}
+\cvsection{Refereed Conference Publications}
+\begin{enumerate}[leftmargin=0.25in,labelsep=0.25em,resume]
+\addtolength{\itemsep}{-0.25\baselineskip}
+    {% endraw %}
 
 {% for item in papers %}
-\begin{samepage}
-{\bf \href{ {{item.url}} }{ {{item.title}} } } \\
-{{item.authors | replace: "Benjamin VanderSloot", name }}\\
+{% if item.type == "conference" %}
+%\begin{samepage}
+\item {\bf \href{ {{item.url}} }{ {{item.title}} } } \\
+{{item.authors | replace: "Matthew Bernhard", name }}\\
 In \emph{\hspace{0pt}{{item.conference}} } \\
 \textbf{ {{item.abbreviation}} }, {{item.month}}.
 {% if item.additional %} \\ ---{\bf {{item.additional}} } {% endif %}
-\end{samepage}
+%\end{samepage}
+{% endif %}
 {% endfor %}
 
-\vspace{6pt}
-\section{\large Teaching}
-
-{\bf Teaching Philosophy}\\
-To be an effective teacher you need to provide significance beyond transactional grading.
+\end{enumerate}
 
 
-{% for item in teaching %}
-\begin{samepage}
-{\bf\hspace{0pt}{{item.title}},  {{item.course}}}  \emph{({{item.term}})}\\
-\emph{\hspace{0pt}{{item.number}}, {{item.institution}}}\\
-{{item.responsibilities}}
-\end{samepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\cvsection{Refereed Workshop Publications}
+\begin{enumerate}[leftmargin=0.25in,labelsep=0.25em,resume]
+\addtolength{\itemsep}{-0.25\baselineskip}
+
+{% for item in papers %}
+{% if item.type == "workshop" %}
+%\begin{samepage}
+\item {\bf \href{ {{item.url}} }{ {{item.title}} } } \\
+{{item.authors | replace: "Matthew Bernhard", name }}\\
+In \emph{\hspace{0pt}{{item.conference}} } \\
+\textbf{ {{item.abbreviation}} }, {{item.month}}.
+{% if item.additional %} \\ ---{\bf {{item.additional}} } {% endif %}
+%\end{samepage}
+{% endif %}
 {% endfor %}
+\end{enumerate}
 
-\vspace{6pt}
-\section{\large Mentorship}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-{% for item in mentorship %}
-\begin{samepage}
-{\bf\hspace{0pt}{{item.student}}  \emph{({{item.time}})}}\\
-{{item.title}}\\
-\emph{\hspace{0pt}{{item.description}}}\\
-\end{samepage}
 
+\cvsection{Selected Other Publications}
+\begin{enumerate}[leftmargin=0.25in,labelsep=0.25em,resume]
+\addtolength{\itemsep}{-0.25\baselineskip}
+
+{% for item in papers %}
+{% if item.type == "other" %}
+%\begin{samepage}
+\item {\bf \href{ {{item.url}} }{ {{item.title}} } } \\
+{{item.authors | replace: "Matthew Bernhard", name }}\\
+In \emph{\hspace{0pt}{{item.venue}}}, {{item.month}}.
+{% if item.additional %} \\ ---{\bf {{item.additional}} } {% endif %}
+%\end{samepage}
+{% endif %}
 {% endfor %}
+\end{enumerate}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\vspace{6pt}
-\section{\large Broader\\Impact}
+\cvsection{Speaking}
+\vspace{8pt}
 
-\begin{samepage}
-\begin{absolutelynopagebreak}
-\textbf{\href{https://censoredplanet.com}{New Methods for Censorship Measurement}} (2018)\\
-Censored Planet is a project that monitors censorship globally using existing Internet infrastructure, without coordinating volunteers in-country. We developed a new technique to monitor application-layer censorship. The project has observed changes in censorship practices around geopolitical events.
-\end{absolutelynopagebreak}
-\end{samepage}
-
-\begin{samepage}
-\begin{absolutelynopagebreak}
-\textbf{\href{https://refraction.networking}{Continuous Deployment of Anticensorship Tools}} (2018)\\
-Decoy Routing techniques are a fundamentally different form of censorship circumvention that were initially developed in 2011. However, they require ISPs to deploy hardware on their network. We have an ongoing deployment in a partner ISP that provides open Internet access to users in censored countries.
-\end{absolutelynopagebreak}
-\end{samepage}
-
-\begin{samepage}
-\begin{absolutelynopagebreak}
-\textbf{\href{https://benvds.com/papers/police.pdf}{Protecting a Local Police Department}} (2016)\\
-We demonstrated attacks against a local police department's computer systems that could have compromised the confidentiality and integrity of criminal justice information. This was performed with the permission of the department we analyzed and all vulnerabilities were corrected..
-\end{absolutelynopagebreak}
-\end{samepage}
-
-%\textbf{\href{https://benvds.com/}{Helping Certificate Transparency}} (2015)\\
-%blah 
-
-\vspace{6pt}
-%\newpage
-\section{\large Honors and Awards}
-
-{% for item in awards %}
-\begin{samepage}
-{\bf {{item.title}} }
-{% if item.reason %} for {{item.reason}}{% endif %}
-\end{samepage}
-{% endfor %}
-
-
-\vspace{6pt}
-\section{\large Invited Talks}
+\textsb{\large Major Invited Talks and Keynotes}
+\vspace{-6pt}
+\begin{itemize}[label={--\ },leftmargin=0.25in,labelsep=0.1625em]
+\addtolength{\itemsep}{-0.25\baselineskip}
 
 {% for item in talks %}
-{% if item.type == 'invited' %} 
-\begin{samepage}
-{\bf {{item.title}}}
-at {{item.event}}, {{item.date | date: "%B %Y"}}.
-\end{samepage}
+{% if item.type == 'invited' %}
+\item {\bf \href{item.url}{{item.title}}}\\
+    {{item.event}}, {{item.location}}, {{item.date | date: "%B %Y"}}.
 {% endif %}
 {% endfor %}
+\end{itemize}
+
+\textsb{\large Selected Talks}
+\vspace{-6pt}
+\begin{itemize}[label={--\ },leftmargin=0.25in,labelsep=0.1625em]
+\addtolength{\itemsep}{-0.25\baselineskip}
+
+\item\textsb{Cybersecurity and U.S. Elections}\\
+{% for item in talks %}{% if item.type == 'election' %}Invited speaker, {{item.event}}, {{item.location}}, {{item.date | date: "%B %Y"}}; {% endif %}{% endfor %}
+
+
+{% for item in talks %}
+{% if item.type == 'selected' %}
+\item {\bf \href{item.url}{{item.title}}}\\
+    {{item.event}}, {{item.location}}, {{item.date | date: "%B %Y"}}.
+{% endif %}
+{% endfor %}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\vspace{-6pt}
+\cvsection{Advising and Mentoring}
+\vspace{8pt}
+%\vspace{-3pt}
+
+\textsb{\large Undergraduate Independent Work}
+\vspace{-5pt}
+\begin{itemize}[label={--\ },leftmargin=0.65in,labelsep=0.325em]
+\addtolength{\itemsep}{-0.525\baselineskip}
+
+{% for item in mentorship %}
+\item[--\ {{item.time}}:] {{item.student}}
+{% endfor %}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cvsection{Teaching}
+\vspace{-6pt}
+
+\begin{itemize}[label={--\ },leftmargin=0.25in,labelsep=0.1625em]
+\addtolength{\itemsep}{-0.4\baselineskip}
+
+{% for item in teaching %}
+\item {\bf\hspace{0pt}{{item.title}},  {{item.course}}}  \emph{({{item.term}})}\\
+\emph{\hspace{0pt}{{item.number}}, {{item.institution}}}\\
+{\small {{item.responsibilities}}}
+{% endfor %}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cvsection{Professional Service}
+\vspace{8pt}
+
+\textsb{\large Program Committee}
+\vspace{-6pt}
 
 {% assign sorted_service = service | sort:"key" | reverse %}
-\vspace{6pt}
-\section{\large Professional Service}
-
-\vspace{-16pt}
-\subsection{Shadow Reviewer}
-\begin{itemize}
+\begin{itemize}[label={--\ },leftmargin=0.25in,labelsep=0.1625em]
+\addtolength{\itemsep}{-0.5\baselineskip}
 {% for item in sorted_service %}
-{% if item.type == "professional-shadow" %} 
-\item {{item.description}}
+{% if item.type == "professional-pc" %} 
+    {% if item.chair %} 
+    \item \textbf{Program co-chair}, {{ item.description }}
+    {% else %}
+    \item {{item.description}}
+    {% endif %}
 {% endif %}
 {% endfor %}
 \end{itemize}
 
-\vspace{-16pt}
-\subsection{External Reviewer}
-\begin{itemize}
+\textsb{\large External Reviewer}
+\vspace{-6pt}
+\begin{itemize}[label={--\ },leftmargin=0.25in,labelsep=0.1625em]
+\addtolength{\itemsep}{-0.5\baselineskip}
+
 {% for item in sorted_service %}
-{% if item.type == "professional-external" %} 
+{% if item.type == "professional-external" %}
 \item {{item.description}}
 {% endif %}
 {% endfor %}
 \end{itemize}
-
-\vspace{6pt}
-\section{\large University Service}
-
-{% for item in sorted_service %}
-{% if item.type == "university" %} 
-{{item.description}}
-{% endif %}
-{% endfor %}
-
-\vspace{6pt}
-\section{\large Patents}
-
-{% for item in patents %}
-{{item}}
-{% endfor %}
-
-\vspace{6pt}
-\section{\large Internships}
-
-{% for item in professional %}
-\begin{samepage}
-\emph{\hspace{0pt}{{item.organization}}} --- {{item.title}} ({{item.year}}) \\
-{{item.responsibility}}
-\end{samepage}
-
-{% endfor %}
-
 
 \end{document}
 

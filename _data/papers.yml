@@ -1,3 +1,23 @@
+- title: "On the Usability of HTTPS Deployment"
+  date: 2019-05-08
+  authors: Matthew Bernhard, Jonathan Sharman, Claudia Ziegler Acemyan, Philip Kortum, Dan S. Wallach, and J. A. Halderman
+  conference: Proceedings of the ACM Conference on Human Factors on Computing Systems
+  abbreviation: (CHI'19)
+  month: May 2019
+  url: https://mbernhard.com/papers/https-usability.pdf
+  top: true
+  frontpage: false
+  type: conference
+- title: "Bernoulli Ballot-Polling: A Manifest Improvement for Risk-Limiting Audits"
+  date: 2019-02-22
+  authors: Kellie Ottoboni, Matthew Bernhard, J. A.  Halderman, Ronald L. Rivest, and Philip B. Stark
+  conference: Proceedings of the 4th Annual Workshop on Advances in Secure Electronic Voting 
+  abbreviation: (Voting'19)
+  month: February 2019
+  url: https://mbernhard.com/papers/bbp.pdf
+  top: false
+  frontpage: false
+  type: workshop
 - title: "403 Forbidden: A Global View of CDN Geoblocking"
   date: 2018-11-01
   authors: Allison McDonald, Matthew Bernhard, Luke Valenta, Benjamin VanderSloot, Will Scott, Nick Sullivan, J. Alex Halderman, Roya Ensafi
@@ -7,39 +27,56 @@
   url: https://ensa.fi/papers/403forbidden_imc18.pdf
   top: true
   frontpage: false
-- title: "Quack: Scalable Remote Measurement of Application-Layer Censorship"
-  date: 2018-07-23
-  authors: Benjamin VanderSloot, Allison McDonald, Will Scott, J. Alex Halderman, Roya Ensafi
-  conference: Proceedings of the USENIX Security Symposium
-  abbreviation: (Sec'18)
-  month: July 2018
-  acceptance: 19% (100/524)
-  url: https://benvds.com/papers/quack-security18.pdf
+  type: conference
+- title: "Voting Technologies, Recount Methods and Votes in Wisconsin and Michigan in 2016"
+  date: 2018-02-22
+  authors: Walter R. Mebane, Jr.,  Matthew Bernhard
+  conference: Proceedings of the 3rd Annual Workshop on Advances in Secure Electronic Voting 
+  abbreviation: (Voting'18)
+  month: February 2019
+  url: https://mbernhard.com/papers/recount2016.pdf
+  top: false
+  frontpage: false
+  type: workshop
+- title: "Public Evidence from Secret Ballots"
+  date: 2017-10-04
+  authors: Matthew Bernhard, Josh Benaloh, J. A. Halderman,  Ronald L. Rivest, Peter Y. A. Ryan, Philip B. Stark, Vanessa Teague, Poorvi L. Vora, and Dan S. Wallach
+  conference: Proceedings of the 2nd International Joint Conference on Electronic Voting 
+  abbreviation: (E-Vote-ID'17)
+  month: October 2017
+  url: https://mbernhard.com/papers/voting-sok.pdf
   top: true
-  frontpage: true
-  abstract:
-    |
-    Remote censorship measurement tools can now detect DNS- and IP-based blocking at global scale. However, a major unmonitored form of interference is blocking triggered by deep packet inspection of application-layer data. We close this gap by introducing Quack, a scalable, remote measurement system that can efficiently detect application-layer interference.
-    </p><p>
-    We show that Quack can effectively detect application- layer blocking triggered on HTTP and TLS headers, and it is flexible enough to support many other diverse protocols. In experiments, we test for blocking across 4458 autonomous systems, an order of magnitude larger than provided by country probes used by OONI. We also test a corpus of 100,000 keywords from vantage points in 40 countries to produce detailed national blocklists. Finally, we analyze the keywords we find blocked to provide in- sight into the application-layer blocking ecosystem and compare countries’ behavior. We find that the most consistently blocked services are related to circumvention tools, pornography, and gambling, but that there is significant country-to-country variation.
-- title: An ISP-Scale Deployment of TapDance
-  date: 2017-08-01
-  authors: Sergey Frolov, Fred Douglas, Will Scott, Allison McDonald, Benjamin VanderSloot, Rod Hynes, Adam Kruger, Michalis Kallitsis, David G. Robinson, Steve Schultze, Nikita Borisov, J. Alex Halderman, and Eric Wustrow
-  conference: Proceedings of the USENIX Workshop on Free and Open Communications on the Internet
-  abbreviation: (FOCI'17)
+  frontpage: false
+  type: conference
+- title: "Understanding the Mirai Botnet"
+  date: 2017-08-13
+  authors: Manos Antonakakis, Tim April, Michael Bailey, Matthew Bernhard, Elie Bursztein, Jaime Cochran, Zakir Durumeric, J. A. Halderman, Luca Invernizzi, Michalis Kallitsis, Deepak Kumar, Chaz Lever, Zane Ma, Joshua Mason, Damian Menscher, Chad Seaman, Nick Sullivan, Kurt Thomas, and Yi Zhou
+  conference: Proceedings of the 26th USENIX Security Symposium
+  abbreviation: (USENIX'17)
   month: August 2017
-  url: https://benvds.com/papers/isp-tapdance.pdf
+  url: https://mbernhard.com/papers/mirai.pdf
+  top: true
+  frontpage: false
+  type: conference
+- title: "Implementing Attestable Kiosks"
+  date: 2016-12-13
+  authors: Matthew Bernhard, J.~A. Halderman, and Gabe Stocco
+  conference: Proceedings of the 14th IEEE Conference on Privacy, Security, and Trust
+  abbreviation: (PST'16)
+  month: December 2016
+  url: https://mbernhard.com/papers/kiosk-pst16.pdf
   top: false
   frontpage: false
-- title: A Security Analysis of Police Computer Systems
-  date: 2016-12-01
-  authors: Benjamin VanderSloot, Stuart Wheaton, and J. Alex Halderman
-  conference: Proceedings of the IEEE Annual Conference on Privacy, Security, and Trust
-  abbreviation: (PST'17)
-  month: December 2017
-  url: https://benvds.com/papers/police.pdf
+  type: conference
+- title: "The Security Challenges of Online Voting Have Not Gone Away" 
+  date: 2016-11-03
+  authors: Robert Cunningham,  Matthew Bernhard, J. A. Halderman
+  venue: IEEE Spectrum
+  month: November 2016
+  url: http://spectrum.ieee.org/tech-talk/telecom/security/the-security-challenges-of-online-voting-have-not-gone-away
   top: false
   frontpage: false
+  type: other
 - title: Towards a Complete View of the Certificate Ecosystem
   date: 2016-09-01
   authors: Benjamin VanderSloot, Johanna Amann, Matthew Bernhard, Zakir Durumeric, Michael Bailey, J. Alex Halderman
@@ -50,6 +87,7 @@
   url: https://benvds.com/papers/https-perspectives-imc16.pdf
   top: true
   frontpage: true
+  type: conference
   abstract:
     |
     The HTTPS certificate ecosystem has been of great interest to the measurement
@@ -66,68 +104,3 @@
     findings, we have worked with the operators of Censys to incorporate CT log
     data into its results going forward, and we recommend that future HTTPS
     measurement adopt this new vantage.
-- title: "DDoSCoin: Cryptocurrency with a Malicious Proof-of-Work"
-  date: 2016-07-01
-  authors: Eric Wustrow and Benjamin VanderSloot
-  conference: Proceedings of the USENIX Workshop on Offensive Technologies
-  abbreviation: (WOOT'16)
-  month: August 2016
-  acceptance: 47% (21/44)
-  url: https://benvds.com/papers/woot16-paper-wustrow.pdf
-  top: false
-  frontpage: true
-  abstract:
-    |
-    Since its creation in 2009, Bitcoin has used a hash-based proof-of-work to
-    generate new blocks, and create a single public ledger of transactions. The
-    hash-based computational puzzle employed by Bitcoin is instrumental to its
-    security, preventing Sybil attacks and making double-spending attacks more
-    difficult. However, there have been concerns over the efficiency of this
-    proof-of-work puzzle, and alternative “useful” proofs have been proposed. In
-    this paper, we present DDoSCoin, which is a cryptocurrency with a malicious
-    proof-of-work. DDoSCoin allows miners to prove that they have contributed to a
-    distributed denial of service attack against specific target servers. This
-    proof involves making a large number of TLS connections to a target server,
-    and using cryptographic responses to prove that a large number of connections
-    has been made. Like proof-of-work puzzles, these proofs are inexpensive to
-    verify, and can be made arbitrarily difficult to solve.
-- title: "Imperfect Forward Secrecy: How Diffie-Hellman Fails in Practice"
-  date: 2015-10-01
-  authors: David Adrian, Karthikeyan Bhargavan, Zakir Durumeric, Pierrick Gaudry, Matthew Green, J. Alex Halderman, Nadia Heninger, Drew Springall, Emmanuel Thomé, Luke Valenta, Benjamin VanderSloot, Eric Wustrow, Santiago Zanella-Beguelin, and Paul Zimmermann
-  conference: Proceedings of the ACM Conference on Computer and Communications Security
-  abbreviation: (CCS'15)
-  month: October 2015
-  acceptance:  20% (128/646)
-  additional: Best Paper Award
-  url: https://benvds.com/papers/imperfect-forward-secrecy-ccs15.pdf
-  top: true
-  frontpage: true
-  abstract:
-    |
-    We investigate the security of Diffie-Hellman key exchange as used in popular
-    Internet protocols and find it to be less secure than widely believed. First,
-    we present a novel flaw in TLS that allows a man-in-the-middle to downgrade
-    connections to “export-grade” Diffie-Hellman. To carry out this attack, we
-    implement the number field sieve discrete log algorithm. After a week-long
-    precomputation for a specified 512-bit group, we can compute arbitrary
-    discrete logs in this group in minutes. We find that 82% of vulnerable servers
-    use a single 512-bit group, allowing us to compromise connections to 7% of
-    Alexa Top Million HTTPS sites. In response, major browsers are being changed
-    to reject short groups. We go on to consider Diffie-Hellman with 768- and
-    1024-bit groups. A small number of fixed or standardized groups are in use by
-    millions of TLS, SSH, and VPN servers. Performing precomputations on a few of
-    these groups would allow a passive eavesdropper to decrypt a large fraction of
-    Internet traffic. In the 1024-bit case, we estimate that such computations are
-    plausible given nation-state resources, and a close reading of published NSA
-    leaks shows that the agency’s attacks on VPNs are consistent with having
-    achieved such a break. We conclude that moving to stronger key exchange
-    methods should be a priority for the Internet community.
-- title: A Memory Rename Table to Reduce Energy and Improve Performance
-  date: 2014-08-01
-  authors: Joseph Pusdesris, Benjamin VanderSloot, Trevor Mudge
-  conference: Proceedings of the ACM/IEEE International Symposium on Low Power Electronics and Design
-  abbreviation: (ISLPED'14)
-  month: August 2014
-  url: https://benvds.com/papers/rename.pdf
-  top: false
-  frontpage: false

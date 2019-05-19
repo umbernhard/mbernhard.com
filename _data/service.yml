@@ -1,24 +1,29 @@
-- type: university
-  key: 2014-12-01
-  description: Chapter President, Eta Kappa Nu (IEEE Honor Society), May 2014 -- December 2014
-- type: university
-  key: 2015-12-01
-  description: Dissonance Speaker Series, Founding Committee Member
-- type: university
-  key: 2016-05-01
-  description: Vice President and Treasurer, Computer Science and Engineering Graduate student organization, University of Michigan, May 2016 -- May 2017
-- type: university
-  key: 2018-05-25
-  description: Tor Exit Node Operator, May 2018 -- present
+- type: professional-pc
+  key: 2021-02-01
+  chair: true
+  description: 6th Workshop on Advances in Secure Electronic Voting (Voting'21)
+- type: professional-pc
+  key: 2020-02-01
+  chair: true
+  description: 5th Workshop on Advances in Secure Electronic Voting (Voting'20)
 - type: professional-external
-  key: 2016-09-01
-  description: Internet Society Network and Distributed System Security Symposium (NDSS) 2017
+  key: 2019-08-01
+  description: USENIX Security Symposium (USENIX'19) 
 - type: professional-external
-  key: 2017-06-01
-  description: ACM Conference on Computer and Communications Security (CCS) 2017
-- type: professional-shadow
-  key: 2018-07-01
-  description: ACM Internet Measurement Conference (IMC) 2018
+  key: 2018-11-01
+  description: ACM Internet Measurement Conference (IMC'18) 
 - type: professional-external
-  key: 2019-03-01
-  description: USENIX Security Symposium (Security) 2019
+  key: 2018-10-01
+  description: ACM Conference on Computer and Communications Security (CCS'18) 
+- type: professional-external
+  key: 2018-08-01
+  description:  International Symposium on Research in Attacks, Intrusions, and Defenses (RAID'18) 
+- type: professional-external
+  key: 2017-10-01
+  description: ACM Conference on Computer and Communications Security (CCS'17) 
+- type: professional-external
+  key: 2017-02-01
+  description: Network and Distributed System Security Symposium (NDSS'17) 
+- type: professional-external
+  key: 2016-08-01
+  description: IEEE Conference on Privacy, Security, and Trust (PST'16) 

@@ -1,24 +1,33 @@
 - course: Introduction to Computer Security
   term: Winter 2018
-  title: Lecturer
+  title: Graduate Student Instructure 
   institution: University of Michigan
   number: EECS 388
-  responsibilities: One of three instructors for a 380 student course. Delivered lectures, held office hours, and deployed improvements to this long-standing course.
-- course: Introduction to Computer Security
-  term: Fall 2017
+  url: https://www.eecs.umich.edu/courses/eecs388/
+  responsibilities: Led discussion section, wrote and graded assignments, and lectured.
+- course: Election Cybersecurity
+  term: Fall 2018
   title: Graduate Student Instructor
   institution: University of Michigan
-  number: EECS 388
-  responsibilities: Delivered binary exploitation and control flow integrity lectures, conducted weekly discussion sections, held office hours, and released and graded multiple projects and homeworks.
-- course: Introduction to Computer Security
-  term: Winter 2016
-  title: Guest Lecturer
+  number: EECS 498
+  url: https://www.eecs.umich.edu/courses/eecs498.009/
+  responsibilities: Assisted with design and teaching of an undergraduate research course into election security. Lectured, wrote homework assignments, and oversaw ten undergraduate independent research projects. 
+- course: Securing Digital Democracy
+  number: Coursera (MOOC)
+  term: 2014--2018
+  title: Course Operations Liaison
   institution: University of Michigan
-  number: EECS 388
-  responsibilities: Delivered lectures on physical security and Cyberconfilict from an international policy perspective.
-- course: Computer and Network Security
-  term: Fall 2015
-  title: Guest Lecturer
-  institution: University of Michigan
-  number: EECS 588
-  responsibilities: Delivered a lecture on cryptography fundamentals to provide background for systems security 
+  url: https://www.coursera.org/learn/digital-democracy
+  responsibilities: Assisted with content maintenance and day-to-day course operations for a massive, open online course about electronic voting and Internet voting technologies.
+- course: Fundamentals of Parallel Programming
+  term: Spring 2015
+  title: Teaching Assistant 
+  institution: Rice University 
+  number: COMP 322
+  responsibilities: Shaped curriculum and led lab discussions for a introductory course on parallel programming featuring Java parallelism and Apache Spark
+- course: Introduction to Program Design 
+  term: Fall 2014
+  title: Teaching Assistant 
+  institution: Rice University 
+  number: COMP 215
+  responsibilities: Led lab discussions and wrote and reviewed assignments and exams for an introductory course on Java and Object Oriented Programming 

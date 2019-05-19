@@ -1,5 +1,61 @@
 - type: invited
-  date: 2018-01-10
-  title: "Censored Planet:  Measuring Internet Censorship Globally and Continuously"
-  event: 2018 International Conference on Cyber Security (ICCS'18)
+  date: 2019-04-30
+  title: "U.S. Civil Rights Commission testimony on voter registration security"
+  event: Michigan Advisory Committee to the U.S. Commission on Civil Rights
+  location: Detroit, Michigan
+  url: 
   # conference talks: DDoSCoin, IMC, PST, Quack
+- type: invited
+  date: 2018-08-10
+  title: "A Crash Course on Election Security"
+  event: 2018 DEF CON Voting Village 
+  location: Las Vegas, Nevada
+  url:
+- type: invited
+  date: 2017-11-11
+  title: "Recount 2016: An Uninvited Security Audit of the U.S. Presidential Election"
+  event: 2017 RoadSec 
+  location: S\~ao Paulo, Brazil
+  url:
+- type: invited
+  date: 2016-12-28
+  title: "Recount 2016: An Uninvited Security Audit of the U.S. Presidential Election"
+  event: 33rd Chaos Communications Congress 
+  location: Hamburg, Germany
+  url: https://media.ccc.de/v/33c3-8074-recount_2016_an_uninvited_security_audit_of_the_u_s_presidential_election
+
+- type: election
+  date: 2017-11-10
+  event: RoadSec Pro
+  location: S\~ao Paulo, Brazil
+- type: election
+  date: 2017-06-10
+  event: Workshop on Electoral Technologies 
+  location: Brasilia, Brazil
+
+- type: selected
+  title: "Internet Pinball: The Security and Privacy Impact of Redirects"
+  date: 2019-05-24
+  event: Mozilla Security Research Summit
+  location: San Francisco, California
+- type: selected
+  title: "Election Security and You"
+  date: 2019-04-13
+  event: Midwest Security Workshop 
+  location: Chicago, Illinois
+- type: selected
+  title: "Coercion-resistant, Receipt-free, and Paperless Voting"
+  date: 2019-02-18
+  event: Rump session at Financial Cryptography and Data Security 2019 
+  location: St. Kitts
+- type: selected
+  title: "403 Forbidden: A Global View of Geoblocking"
+  date: 2018-08-18
+  event: Rump session, 9th USENIX Workshop on Free and Open Communications on the Internet (FOCI'18) 
+  location: Baltimore, Maryland 
+- type: selected
+  title: "A Constitutional Argument Against Burr-Feinstein"
+  date: 2017-08-17
+  event: Rump session, 25th USENIX Security Symposium (USENIX'16)
+  location: Austin, Texas 
+
