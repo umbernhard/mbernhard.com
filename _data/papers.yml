@@ -20,7 +20,7 @@
   type: workshop
 - title: "403 Forbidden: A Global View of CDN Geoblocking"
   date: 2018-11-01
-  authors: Allison McDonald, Matthew Bernhard, Luke Valenta, Benjamin VanderSloot, Will Scott, Nick Sullivan, J. Alex Halderman, Roya Ensafi
+  authors: Allison McDonald, Matthew Bernhard, Luke Valenta, Benjamin VanderSloot, Will Scott, Nick Sullivan, J. A. Halderman, Roya Ensafi
   conference: Proceedings of the ACM Internet Measurement Conference
   abbreviation: (IMC'18)
   month: November 2018
@@ -60,7 +60,7 @@
   type: conference
 - title: "Implementing Attestable Kiosks"
   date: 2016-12-13
-  authors: Matthew Bernhard, J.~A. Halderman, and Gabe Stocco
+  authors: Matthew Bernhard, J. A. Halderman, and Gabe Stocco
   conference: Proceedings of the 14th IEEE Conference on Privacy, Security, and Trust
   abbreviation: (PST'16)
   month: December 2016
@@ -79,7 +79,7 @@
   type: other
 - title: Towards a Complete View of the Certificate Ecosystem
   date: 2016-09-01
-  authors: Benjamin VanderSloot, Johanna Amann, Matthew Bernhard, Zakir Durumeric, Michael Bailey, J. Alex Halderman
+  authors: Benjamin VanderSloot, Johanna Amann, Matthew Bernhard, Zakir Durumeric, Michael Bailey, J. A. Halderman
   conference: Proceedings of the ACM Internet Measurement Conference
   abbreviation: (IMC'16)
   month: November 2016

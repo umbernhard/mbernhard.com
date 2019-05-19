@@ -55,8 +55,7 @@ published: true
         <div class="row">
           <div class="col-md-11 col-sm-12 col-lg-11">
             <div class="cv">
-              <h2 style="font-size: 30px;">All Papers</h2>
-              <h3>Peer-reviewed research papers</h3>
+              <h4>Peer-reviewed research papers</h4>
 {% for item in site.data.papers %}
     {% if item.type == "conference" or item.type == "workshop" %}
                 <p><a href="{{ item.url }}">{{ item.title }}</a></br>
@@ -66,7 +65,7 @@ published: true
                 </p>
     {% endif %}
 {% endfor %}
-              <h3>Selected other publications</h3>
+              <h4>Selected other publications</h4>
 {% for item in site.data.papers %}
     {% if item.type == "other" %}
                 <p><a href="{{ item.url }}">{{ item.title }}</a></br>
