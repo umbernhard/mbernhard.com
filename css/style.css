@@ -118,8 +118,19 @@ pre {margin-bottom: 20px; padding-bottom: 5px;}
 	font-size: 16px;
 }
 
-.col { width: 290px; margin: 0 40px 8px 0; float: left; font-size: .95em; padding: 0 0 0px 10px; }
-	.col.last { width: 615px; margin-right: 0; padding: 0 0 0 0;}
+.col {
+    width: 290px; 
+    margin: 0 40px 8px 0; 
+    float: left; 
+    font-size: .95em; 
+    padding: 0 0 0px 10px; 
+}
+
+.col.last { 
+    width: 615px; 
+    margin-right: 0; 
+    padding: 0 0 0 0;
+}
 
 #cv li { list-style-type: none;}
 

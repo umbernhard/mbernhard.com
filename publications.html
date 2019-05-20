@@ -41,19 +41,19 @@ published: true
 
 <body>
   <div class="container">
-	<div class="row top">
+      <div class="row top">
         <div class="row">
-        <div class="col-lg-10 col-sm-12 col-sm-12 col-lg-offset-1">
-          <div class="col-md-8">
+        <div class="col-lg-10 col-lg-offset-1">
+          <div class="col-md-9">
 
           <h1><a href="/"><img src="images/namelogo.svg" height=50px /></a></h1>
           </div>
-	  <div class="col-md-4">
+	  <div class="col-sm-3">
           <h3 class="text-right titlebar">
               <a href="/files/cv.pdf">CV</a> <a>-</a> <a href="/talks.html">Talks</a> <a>-</a> <a href="https://medium.com/@mattbernhard">Blog</a></h3></div>
       <!--    <hr style="margin-top:0px">-->
         </div>
-        </div>
+    </div>
 
     <div class="row">
       <div class="col-md-12 col-sm-12 col-lg-10 col-lg-offset-1">
@@ -75,7 +75,7 @@ published: true
         <b>{{item.abbreviation}}</b>, {{item.month}}.
         </p>
     </div>
-        <div class="col-md-2">[<a href="{{ item.slides }}">slides</a>]
+        <div class="text-right col-md-2">[<a href="{{ item.slides }}">slides</a>]
     </div>
     {% else %} 
     <div class="col-md-10">
@@ -118,7 +118,6 @@ published: true
  </div>
 
 
- <!--          </div>-->
         </div>
       </div>
     </div>
