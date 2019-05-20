@@ -1,6 +1,6 @@
 ---
 title: Curriculum Vitae
-permalink: /cv.html
+permalink: /publications.html
 published: true
 ---
 <!DOCTYPE html>
@@ -42,30 +42,59 @@ published: true
 <body>
   <div class="container">
 	<div class="row top">
-	  <div class="col-md-8 col-sm-8 col-lg-6 col-lg-offset-1">
-          <h1><a href="/"><img src="images/namelogo.svg" height=50px/></a></h1>
-	  </div>
-	  <div class="col-md-4 col-sm-4 col-lg-4"><h3 class="text-right titlebar"><a href="/files/cv.pdf">CV</a> <a>-</a> <a href="https://medium.com/@mattbernhard">Blog</a></h3></div>
-<div class="col-md-12 col-sm-12 col-lg-10 col-lg-offset-1">
-	    <hr style="margin-top:0px">
-	  </div>
-	</div>
+        <div class="row">
+        <div class="col-lg-10 col-sm-12 col-sm-12 col-lg-offset-1">
+          <div class="col-md-8">
+
+          <h1><a href="/"><img src="images/namelogo.svg" height=50px /></a></h1>
+          </div>
+	  <div class="col-md-4">
+          <h3 class="text-right titlebar">
+              <a href="/files/cv.pdf">CV</a> <a>-</a> <a href="/talks.html">Talks</a> <a>-</a> <a href="https://medium.com/@mattbernhard">Blog</a></h3></div>
+      <!--    <hr style="margin-top:0px">-->
+        </div>
+        </div>
+
     <div class="row">
       <div class="col-md-12 col-sm-12 col-lg-10 col-lg-offset-1">
-        <div class="row">
-          <div class="col-md-11 col-sm-12 col-lg-11">
+          <div class="row">
+              <!--          <div class="col-md-11 col-sm-12 col-lg-11">-->
             <div class="cv">
-              <h4>Peer-reviewed research papers</h4>
+        <div class="col-md-12">
+
+        <div class="col-md-12">
+          <h4>Peer-reviewed research papers</h4>
+        </div>
 {% for item in site.data.papers %}
     {% if item.type == "conference" or item.type == "workshop" %}
-                <p><a href="{{ item.url }}">{{ item.title }}</a></br>
-				{{item.authors | replace: "Matthew Bernhard", "<u>Matthew Bernhard</u>"}}</br>
-				In <i>{{item.conference}}</i></br>
-				<b>{{item.abbreviation}}</b>, {{item.month}}.
-                </p>
+    {% if item.slides %}
+    <div class="col-md-10">
+        <p><a href="{{ item.url }}">{{ item.title }}</a></br>
+        {{item.authors | replace: "Matthew Bernhard", "<u>Matthew Bernhard</u>"}}</br>
+        In <i>{{item.conference}}</i></br>
+        <b>{{item.abbreviation}}</b>, {{item.month}}.
+        </p>
+    </div>
+        <div class="col-md-2">[<a href="{{ item.slides }}">slides</a>]
+    </div>
+    {% else %} 
+    <div class="col-md-10">
+        <p><a href="{{ item.url }}">{{ item.title }}</a></br>
+        {{item.authors | replace: "Matthew Bernhard", "<u>Matthew Bernhard</u>"}}</br>
+        In <i>{{item.conference}}</i></br>
+        <b>{{item.abbreviation}}</b>, {{item.month}}.
+        </p>
+    </div>
+    {% endif %}
     {% endif %}
 {% endfor %}
+    </div>
+    <div class="col-md-12">
+
+        <div class="col-md-12">
               <h4>Selected other publications</h4>
+            </div>
+    <div class="col-md-10">
 {% for item in site.data.papers %}
     {% if item.type == "other" %}
                 <p><a href="{{ item.url }}">{{ item.title }}</a></br>
@@ -74,6 +103,7 @@ published: true
                 </p>
     {% endif %}
 {% endfor %}
+    </div>
             </div>
             <div class="spacer"></div>
 <div class="row center-block">
@@ -88,10 +118,11 @@ published: true
  </div>
 
 
-          </div>
+ <!--          </div>-->
         </div>
       </div>
     </div>
+          </div>
   </div>
 </body>
 </html>

@@ -183,8 +183,13 @@ In \emph{\hspace{0pt}{{item.venue}}}, {{item.month}}.
 
 {% for item in talks %}
 {% if item.type == 'invited' %}
-\item {\bf \href{item.url}{{item.title}}}\\
+{% if item.url %}
+\item {\bf \href{ {{item.url}} }{ {{item.title}} }}\\
     {{item.event}}, {{item.location}}, {{item.date | date: "%B %Y"}}.
+{% else %}
+\item {\bf {{item.title}} }\\
+    {{item.event}}, {{item.location}}, {{item.date | date: "%B %Y"}}.
+{% endif %}
 {% endif %}
 {% endfor %}
 \end{itemize}
@@ -288,8 +293,6 @@ In \emph{\hspace{0pt}{{item.venue}}}, {{item.month}}.
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-
 \cvsection{Professional Experience}
 \begin{itemize}[label={--\ },leftmargin=0.25in,labelsep=0.1625em]
 \addtolength{\itemsep}{-0.25\baselineskip}

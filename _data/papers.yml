@@ -8,6 +8,7 @@
   top: true
   frontpage: false
   type: conference
+  slides: https://drive.google.com/open?id=1hGvWWiAqoUjFXOQScAxr_E5qIL0PFmzMLoTfu3OaeJk
 - title: "Bernoulli Ballot-Polling: A Manifest Improvement for Risk-Limiting Audits"
   date: 2019-02-22
   authors: Kellie Ottoboni, Matthew Bernhard, J. A.  Halderman, Ronald L. Rivest, and Philip B. Stark
@@ -37,6 +38,7 @@
   url: https://mbernhard.com/papers/recount2016.pdf
   top: false
   frontpage: false
+  slides: https://drive.google.com/open?id=10aXYEndC3-eVQxW2L9-pnope_TYyF9-GHYWR5iikwLI
   type: workshop
 - title: "Public Evidence from Secret Ballots"
   date: 2017-10-04
@@ -47,6 +49,7 @@
   url: https://mbernhard.com/papers/voting-sok.pdf
   top: true
   frontpage: false
+  slides: https://drive.google.com/open?id=1b31vZQFc6roO7IgTJ9HAujqJ1uQpUOXtGR3oo6ybd0c
   type: conference
 - title: "Understanding the Mirai Botnet"
   date: 2017-08-13
@@ -67,6 +70,7 @@
   url: https://mbernhard.com/papers/kiosk-pst16.pdf
   top: false
   frontpage: false
+  slides: https://drive.google.com/open?id=1Ogb1bYxyLMvy91YP7h6N_xI6Oc8V5NmZ7Lo87y7Q46M
   type: conference
 - title: "The Security Challenges of Online Voting Have Not Gone Away" 
   date: 2016-11-03

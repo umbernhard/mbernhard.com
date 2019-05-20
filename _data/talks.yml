@@ -3,20 +3,41 @@
   title: "U.S. Civil Rights Commission testimony on voter registration security"
   event: Michigan Advisory Committee to the U.S. Commission on Civil Rights
   location: Detroit, Michigan
+  slides: https://drive.google.com/open?id=13Kn8FAEntfrXYHj1Y0OVoQJEtRz1GLFEU8oyzWYlhCs
   url: 
   # conference talks: DDoSCoin, IMC, PST, Quack
+- type: invited
+  date: 2019-03-14
+  title: "Panel: Next Generation Voting Systems (moderator)"
+  event: Election Verification Network Conference
+  location: Washington, D.C.
+  url: https://www.youtube.com/watch?v=aEhojZVXJVQ&list=PL1DeWOH5cy6Rcba515oOO4rD0iP0u_DKI&index=7
+- type: invited
+  date: 2019-03-14
+  title: "Panel: Usability and Voter Verification (moderator)"
+  event: Election Verification Network Conference
+  location: Washington, D.C.
+  url: https://www.youtube.com/watch?v=G0EcHXLCn84&list=PL1DeWOH5cy6Rcba515oOO4rD0iP0u_DKI&index=7&t=0s
 - type: invited
   date: 2018-08-10
   title: "A Crash Course on Election Security"
   event: 2018 DEF CON Voting Village 
   location: Las Vegas, Nevada
   url:
+  slides: https://drive.google.com/open?id=1gkf1CuieaTJdRBVmO_GE6Q8Cme2fqD6ss3oTIthTrQU
+- type: invited
+  date: 2017-03-15
+  title: "Panel: Do We Want a Recount or Not?"
+  event: Election Verification Network Conference
+  location: Washington, D.C.
+  url:
 - type: invited
   date: 2017-11-11
   title: "Recount 2016: An Uninvited Security Audit of the U.S. Presidential Election"
   event: 2017 RoadSec 
   location: S\~ao Paulo, Brazil
-  url:
+  url: https://www.youtube.com/watch?v=_pzV921KnxU
+  slides: https://docs.google.com/presentation/d/1avtECTXLuLDx1a7Z8MYta1va1tLmAbEs2ttzlh-Pku0/edit?usp=sharing
 - type: invited
   date: 2016-12-28
   title: "Recount 2016: An Uninvited Security Audit of the U.S. Presidential Election"
@@ -43,19 +64,23 @@
   date: 2019-04-13
   event: Midwest Security Workshop 
   location: Chicago, Illinois
+  slides: https://drive.google.com/open?id=1gkf1CuieaTJdRBVmO_GE6Q8Cme2fqD6ss3oTIthTrQU
 - type: selected
   title: "Coercion-resistant, Receipt-free, and Paperless Voting"
   date: 2019-02-18
   event: Rump session at Financial Cryptography and Data Security 2019 
   location: St. Kitts
+  slides: https://drive.google.com/open?id=1lnYCbWtdPxvEEjvuh6paRkUoYXVJEGfIY4W4nledapA
 - type: selected
   title: "403 Forbidden: A Global View of Geoblocking"
   date: 2018-08-18
   event: Rump session, 9th USENIX Workshop on Free and Open Communications on the Internet (FOCI'18) 
   location: Baltimore, Maryland 
+  slides: https://drive.google.com/open?id=1IaoVFWufRVz065oUCHgj5Y__YzZIOlqVl4pERzfOQGA
 - type: selected
   title: "A Constitutional Argument Against Burr-Feinstein"
   date: 2017-08-17
   event: Rump session, 25th USENIX Security Symposium (USENIX'16)
   location: Austin, Texas 
+  slides: https://drive.google.com/open?id=1qMkC8MWqDSTCao7uuf7EWXc3rvmjkLQrwMAHgjrrbOU
 
