@@ -1,3 +1,14 @@
+- title: "UnclearBallot: Automated Ballot Image Manipulation"
+  date: 2019-10-01
+  authors: Matthew Bernhard, Kartikeya Kandula, Jeremy Wink, and J. A. Halderman
+  conference: To appear in Proceedings of the 4th International Joint Conference on Electronic Voting 
+  abbreviation: (E-Vote-ID'19)
+  month: October 2019
+  url: 
+  top: true
+  frontpage: false
+  type: conference
+  slides: 
 - title: "On the Usability of HTTPS Deployment"
   date: 2019-05-08
   authors: Matthew Bernhard, Jonathan Sharman, Claudia Ziegler Acemyan, Philip Kortum, Dan S. Wallach, and J. A. Halderman
