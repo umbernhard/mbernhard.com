@@ -81,46 +81,21 @@ published: true
 
     <h4>Select Publications</h4>
 
+    {% for item in site.data.papers %}
+    {% if item.frontpage %}
     <div class="talk">
-        <h5><a href="/papers/https-usability.pdf">On the Usability of HTTPS Deployment</a></h5>
-        <ul>
-            <li>Matthew Bernhard, Jonathan Sharman, Claudia Ziegler Acemyan, Philip Kortum, Dan S. Wallach,</li>
-            <li>J. Alex Halderman </li>
-            <li class="venue"><i>Proc. ACM Conference on Human Factors in Computing Systems (CHI’19)</i>, May 2019</li>
-        </ul>
+        <p><a href="{{ item.url }}">{{ item.title }}</a></br>
+        {{item.authors | replace: "Matthew Bernhard", "<u>Matthew Bernhard</u>"}}</br>
+        {% if item.toappear %}
+        To appear in <i>{{item.conference}}</i></br>
+        {% else %}
+        In <i>{{item.conference}}</i></br>
+        {% endif %}
+        <b>{{item.abbreviation}}</b>, {{item.month}}.
+        </p>
     </div>
-    <div class="talk">
-        <h5><a href="/papers/bbp.pdf">Bernoulli Ballot Polling: A Manifest Improvement for Risk-Limiting Audits</a></h5>
-        <ul>
-            <li>Kellie Ottoboni, Matthew Bernhard, J. Alex Halderman, Ronald L. Rivest, Philip B. Stark </li>
-            <li class="venue"><i>Proc. 4th Workshop on Advances in Secure Electronic Voting (Voting ’19)</i>, February 2019</li>
-        </ul>
-    </div>
-    <div class="talk">
-        <h5><a href="/papers/geoblocking.pdf">403 Forbidden: A Global View of Geoblocking</a></h5>
-        <ul>
-            <li>Allison McDonald, Matthew Bernhard, Luke Valenta, Benjamin VanderSloot, Will Scott, Nick Sullivan,</li>
-            <li>J. Alex Halderman, Roya Ensafi </li>
-            <li class="venue"><i>Proc. 18th ACM Internet Measurement Conference (IMC ’18)</i>, October 2018</li>
-        </ul>
-    </div>
-    <div class="talk">
-        <h5><a href="/papers/voting-sok.pdf">Public Evidence from Secret Ballots</a></h5>
-        <ul>
-            <li>Matthew Bernhard, Josh Benaloh, J. Alex Halderman, Ronald L. Rivest, Peter Y. A. Ryan, Philip B. Stark, </li>
-            <li>Vanessa Teage, Poorvi L. Vora, Dan S. Wallach</li>
-            <li class="venue"><i>Second International Joint Conference on Electronic Voting (E-Vote-ID 17)</i>, October 2017</li>
-        </ul>
-    </div>
-    <div class="talk">
-        <h5><a href="/papers/mirai.pdf">Understanding the Mirai Botnet</a></h5>
-        <ul>
-            <li>Manos Antonakakis, Tim April, Michael Bailey, Matt Bernhard, Elie Bursztein, Jaime Cochran</li>
-            <li>Zakir Durumeric, J. Alex Halderman, Luca Invernizzi, Michalis Kallitsis, Deepak Kumar, Chaz Lever, </li>
-            <li>Zane Ma, Joshua Mason, Damian Menscher, Chad Seaman, Nick Sullivan, Kurt Thomas, Yi Zhou</li>
-            <li class="venue"><i>USENIX Security Symposium</i>, August 2017</li>
-        </ul>
-    </div>
+    {% endif %}
+{% endfor %}
 
 
 </div>

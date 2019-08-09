@@ -1,14 +1,15 @@
 - title: "UnclearBallot: Automated Ballot Image Manipulation"
   date: 2019-10-01
   authors: Matthew Bernhard, Kartikeya Kandula, Jeremy Wink, and J. A. Halderman
-  conference: To appear in Proceedings of the 4th International Joint Conference on Electronic Voting 
+  conference: Proceedings of the 4th International Joint Conference on Electronic Voting 
   abbreviation: (E-Vote-ID'19)
   month: October 2019
-  url: 
+  url: https://mbernhard.com/papers/unclearballot.pdf 
   top: true
-  frontpage: false
+  frontpage: true
   type: conference
   slides: 
+  toappear: true
 - title: "On the Usability of HTTPS Deployment"
   date: 2019-05-08
   authors: Matthew Bernhard, Jonathan Sharman, Claudia Ziegler Acemyan, Philip Kortum, Dan S. Wallach, and J. A. Halderman
@@ -17,9 +18,10 @@
   month: May 2019
   url: https://mbernhard.com/papers/https-usability.pdf
   top: true
-  frontpage: false
+  frontpage: true
   type: conference
   slides: https://drive.google.com/open?id=1hGvWWiAqoUjFXOQScAxr_E5qIL0PFmzMLoTfu3OaeJk
+  toappear: false
 - title: "Bernoulli Ballot-Polling: A Manifest Improvement for Risk-Limiting Audits"
   date: 2019-02-22
   authors: Kellie Ottoboni, Matthew Bernhard, J. A.  Halderman, Ronald L. Rivest, and Philip B. Stark
@@ -28,8 +30,9 @@
   month: February 2019
   url: https://mbernhard.com/papers/bbp.pdf
   top: false
-  frontpage: false
+  frontpage: true
   type: workshop
+  toappear: false
 - title: "403 Forbidden: A Global View of CDN Geoblocking"
   date: 2018-11-01
   authors: Allison McDonald, Matthew Bernhard, Luke Valenta, Benjamin VanderSloot, Will Scott, Nick Sullivan, J. A. Halderman, Roya Ensafi
@@ -40,6 +43,7 @@
   top: true
   frontpage: false
   type: conference
+  toappear: false
 - title: "Voting Technologies, Recount Methods and Votes in Wisconsin and Michigan in 2016"
   date: 2018-02-22
   authors: Walter R. Mebane, Jr.,  Matthew Bernhard
@@ -51,6 +55,7 @@
   frontpage: false
   slides: https://drive.google.com/open?id=10aXYEndC3-eVQxW2L9-pnope_TYyF9-GHYWR5iikwLI
   type: workshop
+  toappear: false
 - title: "Public Evidence from Secret Ballots"
   date: 2017-10-04
   authors: Matthew Bernhard, Josh Benaloh, J. A. Halderman,  Ronald L. Rivest, Peter Y. A. Ryan, Philip B. Stark, Vanessa Teague, Poorvi L. Vora, and Dan S. Wallach
@@ -59,9 +64,10 @@
   month: October 2017
   url: https://mbernhard.com/papers/voting-sok.pdf
   top: true
-  frontpage: false
+  frontpage: true
   slides: https://drive.google.com/open?id=1b31vZQFc6roO7IgTJ9HAujqJ1uQpUOXtGR3oo6ybd0c
   type: conference
+  toappear: false
 - title: "Understanding the Mirai Botnet"
   date: 2017-08-13
   authors: Manos Antonakakis, Tim April, Michael Bailey, Matthew Bernhard, Elie Bursztein, Jaime Cochran, Zakir Durumeric, J. A. Halderman, Luca Invernizzi, Michalis Kallitsis, Deepak Kumar, Chaz Lever, Zane Ma, Joshua Mason, Damian Menscher, Chad Seaman, Nick Sullivan, Kurt Thomas, and Yi Zhou
@@ -70,8 +76,9 @@
   month: August 2017
   url: https://mbernhard.com/papers/mirai.pdf
   top: true
-  frontpage: false
+  frontpage: true
   type: conference
+  toappear: false
 - title: "Implementing Attestable Kiosks"
   date: 2016-12-13
   authors: Matthew Bernhard, J. A. Halderman, and Gabe Stocco
@@ -83,6 +90,7 @@
   frontpage: false
   slides: https://drive.google.com/open?id=1Ogb1bYxyLMvy91YP7h6N_xI6Oc8V5NmZ7Lo87y7Q46M
   type: conference
+  toappear: false
 - title: "The Security Challenges of Online Voting Have Not Gone Away" 
   date: 2016-11-03
   authors: Robert Cunningham,  Matthew Bernhard, J. A. Halderman
@@ -92,6 +100,7 @@
   top: false
   frontpage: false
   type: other
+  toappear: false
 - title: Towards a Complete View of the Certificate Ecosystem
   date: 2016-09-01
   authors: Benjamin VanderSloot, Johanna Amann, Matthew Bernhard, Zakir Durumeric, Michael Bailey, J. A. Halderman
@@ -101,8 +110,9 @@
   acceptance: 25% (46/184)
   url: https://benvds.com/papers/https-perspectives-imc16.pdf
   top: true
-  frontpage: true
+  frontpage: false
   type: conference
+  toappear: false
   abstract:
     |
     The HTTPS certificate ecosystem has been of great interest to the measurement

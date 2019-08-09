@@ -124,7 +124,7 @@ Computer Science and Engineering\\
 %\begin{samepage}
 \item {\bf \href{ {{item.url}} }{ {{item.title}} } } \\
 {{item.authors | replace: "Matthew Bernhard", name }}\\
-In \emph{\hspace{0pt}{{item.conference}} } \\
+{% if item.toappear %} To appear in \emph{\hspace{0pt}{{item.conference}} }  {% else %} In \emph{\hspace{0pt}{{item.conference}} }  {% endif %}\\
 \textbf{ {{item.abbreviation}} }, {{item.month}}.
 {% if item.additional %} \\ ---{\bf {{item.additional}} } {% endif %}
 %\end{samepage}
@@ -145,7 +145,7 @@ In \emph{\hspace{0pt}{{item.conference}} } \\
 %\begin{samepage}
 \item {\bf \href{ {{item.url}} }{ {{item.title}} } } \\
 {{item.authors | replace: "Matthew Bernhard", name }}\\
-In \emph{\hspace{0pt}{{item.conference}} } \\
+{% if item.toappear %} To appear in \emph{\hspace{0pt}{{item.conference}} }  {% else %} In \emph{\hspace{0pt}{{item.conference}} }  {% endif %}\\
 \textbf{ {{item.abbreviation}} }, {{item.month}}.
 {% if item.additional %} \\ ---{\bf {{item.additional}} } {% endif %}
 %\end{samepage}
