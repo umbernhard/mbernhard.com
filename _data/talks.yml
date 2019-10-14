@@ -1,11 +1,16 @@
 - type: invited
+  date: 2019-09-17
+  title: "Recount 2016 and Student Voter Engagement"
+  event: University of Pennsylvania Voter Engagement Week
+  location: Philadelphia, Pennsylvania 
+  slides: https://docs.google.com/presentation/d/1HLcdcIGxl2_3cGX5YKt6PHZmYMVV6zAt_mtudVxmi8k/edit?usp=sharing 
+- type: invited
   date: 2019-04-30
   title: "U.S. Civil Rights Commission testimony on voter registration security"
   event: Michigan Advisory Committee to the U.S. Commission on Civil Rights
   location: Detroit, Michigan
   slides: https://drive.google.com/open?id=13Kn8FAEntfrXYHj1Y0OVoQJEtRz1GLFEU8oyzWYlhCs
   url: 
-  # conference talks: DDoSCoin, IMC, PST, Quack
 - type: invited
   date: 2019-03-14
   title: "Panel: Next Generation Voting Systems (moderator)"
