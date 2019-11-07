@@ -85,8 +85,11 @@ published: true
     <div class="col-md-10">
         <p><a href="{{ item.url }}">{{ item.title }}</a></br>
         {{item.authors | replace: "Matthew Bernhard", "<u>Matthew Bernhard</u>"}}</br>
+        {% if item.toappear %}
+        To appear in <i>{{item.conference}}</i></br>
+        {% else %}
         In <i>{{item.conference}}</i></br>
-        <b>{{item.abbreviation}}</b>, {{item.month}}.
+        {% endif %}
         </p>
     </div>
     {% endif %}

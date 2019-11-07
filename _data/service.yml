@@ -7,6 +7,9 @@
   chair: true
   description: 5th Workshop on Advances in Secure Electronic Voting (Voting'20)
 - type: professional-external
+  key: 2019-11-01
+  description: ACM Conferences on Human Factors in Computing Systems (CHI'20) 
+- type: professional-external
   key: 2019-08-01
   description: USENIX Security Symposium (USENIX'19) 
 - type: professional-external

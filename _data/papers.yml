@@ -1,3 +1,15 @@
+- title: "Decentralized Control: A Case Study of Russia"
+  date: 2020-02-23
+  authors: Reethika Ramesh, Ram Sundara Raman, Matthew Bernhard, Victor Ongkowijaya, Leonid Evdokimov, Anne Edmundson, Steven Sprecher, Muhammad Ikram, Roya Ensafi
+  conference: Proceedings of the 27th Network and Distributed Systems Symposium 
+  abbreviation: (NDSS'20)
+  month: February 2020
+  url: https://mbernhard.com/papers/russia.pdf 
+  top: true
+  frontpage: false
+  type: conference
+  slides: 
+  toappear: true
 - title: "UnclearBallot: Automated Ballot Image Manipulation"
   date: 2019-10-01
   authors: Matthew Bernhard, Kartikeya Kandula, Jeremy Wink, and J. A. Halderman
