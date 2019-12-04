@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/umbernhard
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mbernhard.com
+  * I am umbernhard (https://keybase.io/umbernhard) on keybase.
+  * I have a public key ASA_fQU9Q42H7UAI3Z83d645ypqk9kFvQhWWceuYbClXzwo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01203f7d053d438d87ed4008dd9f3777ae39ca9aa4f6416f42159671eb986c2957cf0a",
+            "host": "keybase.io",
+            "kid": "01203f7d053d438d87ed4008dd9f3777ae39ca9aa4f6416f42159671eb986c2957cf0a",
+            "uid": "99a7bc704c6d88b04df308454522de19",
+            "username": "umbernhard"
+        },
+        "service": {
+            "hostname": "mbernhard.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1486859824,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1486859793,
+        "hash": "ec13919aa4abb63f1d6ee317fcdaeb9eeb2f3b46fecdabeaa1cd3a065c59d17face0622d9c7e4a51f7552a6d65cf880003efe2630a40920d1ab1985367cfc780",
+        "seqno": 878921
+    },
+    "prev": "a04ea02aee103e5d55311953ad2800978c1cf947834f4c60d0c40dc093b10469",
+    "seqno": 8,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgP30FPUONh+1ACN2fN3euOcqapPZBb0IVlnHrmGwpV88Kp3BheWxvYWTFAvd7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwM2Y3ZDA1M2Q0MzhkODdlZDQwMDhkZDlmMzc3N2FlMzljYTlhYTRmNjQxNmY0MjE1OTY3MWViOTg2YzI5NTdjZjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwM2Y3ZDA1M2Q0MzhkODdlZDQwMDhkZDlmMzc3N2FlMzljYTlhYTRmNjQxNmY0MjE1OTY3MWViOTg2YzI5NTdjZjBhIiwidWlkIjoiOTlhN2JjNzA0YzZkODhiMDRkZjMwODQ1NDUyMmRlMTkiLCJ1c2VybmFtZSI6InVtYmVybmhhcmQifSwic2VydmljZSI6eyJob3N0bmFtZSI6Im1iZXJuaGFyZC5jb20iLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4xOCJ9LCJjdGltZSI6MTQ4Njg1OTgyNCwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDg2ODU5NzkzLCJoYXNoIjoiZWMxMzkxOWFhNGFiYjYzZjFkNmVlMzE3ZmNkYWViOWVlYjJmM2I0NmZlY2RhYmVhYTFjZDNhMDY1YzU5ZDE3ZmFjZTA2MjJkOWM3ZTRhNTFmNzU1MmE2ZDY1Y2Y4ODAwMDNlZmUyNjMwYTQwOTIwZDFhYjE5ODUzNjdjZmM3ODAiLCJzZXFubyI6ODc4OTIxfSwicHJldiI6ImEwNGVhMDJhZWUxMDNlNWQ1NTMxMTk1M2FkMjgwMDk3OGMxY2Y5NDc4MzRmNGM2MGQwYzQwZGMwOTNiMTA0NjkiLCJzZXFubyI6OCwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEBxqUWC4PMy2GGyDdoEF2z6EV+DwLXE+Qnkde3mCd5QE779qAu7uRdE3GJ3y733ozRx/s3iWbc/8pM3jydWa5wMqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgehfL6Haas/OzSh4sDSUhQY5EzYmsnYFQEituwJNQW6ejdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/umbernhard
+
+==================================================================
+

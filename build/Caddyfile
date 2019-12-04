@@ -1,0 +1,70 @@
+# Make sure that DNS for your domain points to this IP before launching Caddy,
+# so that LE works correctly.
+#
+# Using `log stdout` and `errors stderr` makes the logging under systemd nicer.
+#
+# Example static HTML
+#example.com {
+#    root /var/www/example.com
+#    log stdout
+#    errors stderr
+#}
+#
+# Example reverse proxy to a webapp running at localhost:9000
+#some.domain.com {
+#    proxy / localhost:9000
+#    log stdout
+#    errors stderr
+#}
+#
+
+# See the caddy documentation for more details
+mbernhard.com {
+
+    header / {
+            Strict-Transport-Security "max-age=15768000; includeSubDomains"
+        X-Frame-Options "Deny"
+        X-Content-Type-Options: nosniff
+        Content-Security-Policy "
+            default-src 'self';
+            style-src 'self' bootstrapcdn.com *.bootstrapcdn.com;
+            script-src 'self' bootstrapcdn.com *.bootstrapcdn.com googleapis.com *.googleapis.com;
+            font-src 'self' bootstrapcdn.com *.bootstrapcdn.com;
+            img-src data: 'self' imgur.com *.imgur.com;
+            form-action 'self';
+            connect-src 'self' pokeapi.co;
+            frame-ancestors 'none';
+            report-uri {$CSP_REPORT_URI}
+        "
+    }
+    expires / {
+        match .png$ 1d
+        match .jpg$ 1m
+        match .pdf$ 1i
+        match .html$ 1d
+    }
+    root /var/www/mbernhard.com/_site
+    log stdout
+    errors stderr
+}
+
+www.mbernhard.com {
+    header / {
+            Strict-Transport-Security "max-age=15768000; includeSubDomains"
+    }
+    log stdout
+    errors stderr
+    redir https://mbernhard.com{uri}
+}
+
+#auditmyvote.com {
+#    root /var/www/html/
+#    log stdout
+#    errors stderr
+#}
+#
+#registerpennsyltucky.com {
+#   root /var/www/html/
+#    log stdout
+#    errors stderr
+#}
