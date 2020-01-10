@@ -34,6 +34,10 @@ citecolor=black,urlcolor=MyDarkBlue,bookmarks=false,bookmarksopen=false,
 \pdfglyphtounicode{nineoldstyle}{0039}
 \pdfgentounicode=1
 
+
+\hyphenpenalty=10000
+
+
 \begin{document}
 
 \fancyhead{}
@@ -115,19 +119,18 @@ Computer Science and Engineering\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cvsection{Refereed Conference Publications}
+\vspace{4pt}
 \begin{enumerate}[leftmargin=0.25in,labelsep=0.25em,resume]
 \addtolength{\itemsep}{-0.25\baselineskip}
     {% endraw %}
 
 {% for item in papers %}
 {% if item.type == "conference" %}
-%\begin{samepage}
-\item {\bf \href{ {{item.url}} }{ {{item.title}} } } \\
+\begin{minipage}{\textwidth} \item {\bf \href{ {{item.url}} }{ {{item.title}} } } \\
 {{item.authors | replace: "Matthew Bernhard", name }}\\
 {% if item.toappear %} To appear in \emph{\hspace{0pt}{{item.conference}} }  {% else %} In \emph{\hspace{0pt}{{item.conference}} }  {% endif %}\\
-\textbf{ {{item.abbreviation}} }, {{item.month}}.
+\textbf{ {{item.abbreviation}} }, {{item.month}}. \end{minipage}
 {% if item.additional %} \\ ---{\bf {{item.additional}} } {% endif %}
-%\end{samepage}
 {% endif %}
 {% endfor %}
 
@@ -143,10 +146,10 @@ Computer Science and Engineering\\
 {% for item in papers %}
 {% if item.type == "workshop" %}
 %\begin{samepage}
-\item {\bf \href{ {{item.url}} }{ {{item.title}} } } \\
+\begin{minipage}{\textwidth} \item {\bf \href{ {{item.url}} }{ {{item.title}} } } \\
 {{item.authors | replace: "Matthew Bernhard", name }}\\
 {% if item.toappear %} To appear in \emph{\hspace{0pt}{{item.conference}} }  {% else %} In \emph{\hspace{0pt}{{item.conference}} }  {% endif %}\\
-\textbf{ {{item.abbreviation}} }, {{item.month}}.
+\textbf{ {{item.abbreviation}} }, {{item.month}}. \end{minipage}
 {% if item.additional %} \\ ---{\bf {{item.additional}} } {% endif %}
 %\end{samepage}
 {% endif %}
@@ -155,17 +158,18 @@ Computer Science and Engineering\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newpage
 \cvsection{Selected Other Publications}
+\vspace{4pt}
 \begin{enumerate}[leftmargin=0.25in,labelsep=0.25em,resume]
 \addtolength{\itemsep}{-0.25\baselineskip}
 
 {% for item in papers %}
 {% if item.type == "other" %}
 %\begin{samepage}
-\item {\bf \href{ {{item.url}} }{ {{item.title}} } } \\
+\begin{minipage}{\textwidth} \item {\bf \href{ {{item.url}} }{ {{item.title}} } } \\
 {{item.authors | replace: "Matthew Bernhard", name }}\\
 In \emph{\hspace{0pt}{{item.venue}}}, {{item.month}}.
+\end{minipage}
 {% if item.additional %} \\ ---{\bf {{item.additional}} } {% endif %}
 %\end{samepage}
 {% endif %}
@@ -178,18 +182,22 @@ In \emph{\hspace{0pt}{{item.venue}}}, {{item.month}}.
 \vspace{8pt}
 
 \textsb{\large Major Invited Talks and Keynotes}
-\vspace{-6pt}
+%\vspace{-6pt}
 \begin{itemize}[label={--\ },leftmargin=0.25in,labelsep=0.1625em]
 \addtolength{\itemsep}{-0.25\baselineskip}
 
 {% for item in talks %}
 {% if item.type == 'invited' %}
 {% if item.url %}
+\begin{minipage}{\textwidth}
 \item {\bf \href{ {{item.url}} }{ {{item.title}} }}\\
     {{item.event}}, {{item.location}}, {{item.date | date: "%B %Y"}}.
+\end{minipage}
 {% else %}
+\begin{minipage}{\textwidth}
 \item {\bf {{item.title}} }\\
     {{item.event}}, {{item.location}}, {{item.date | date: "%B %Y"}}.
+\end{minipage}
 {% endif %}
 {% endif %}
 {% endfor %}
@@ -206,8 +214,10 @@ In \emph{\hspace{0pt}{{item.venue}}}, {{item.month}}.
 
 {% for item in talks %}
 {% if item.type == 'selected' %}
+\begin{minipage}{\textwidth}
 \item {\bf \href{item.url}{{item.title}}}\\
     {{item.event}}, {{item.location}}, {{item.date | date: "%B %Y"}}.
+\end{minipage}
 {% endif %}
 {% endfor %}
 \end{itemize}
@@ -219,27 +229,31 @@ In \emph{\hspace{0pt}{{item.venue}}}, {{item.month}}.
 %\vspace{-3pt}
 
 \textsb{\large Undergraduate Independent Work}
-\vspace{-5pt}
+%\vspace{-5pt}
 \begin{itemize}[label={--\ },leftmargin=0.65in,labelsep=0.325em]
 \addtolength{\itemsep}{-0.525\baselineskip}
 
 {% for item in mentorship %}
+\begin{minipage}{\textwidth}
 \item[--\ {{item.time}}:] {{item.student}}
+\end{minipage}
 {% endfor %}
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cvsection{Teaching}
-\vspace{-6pt}
+%\vspace{-6pt}
 
 \begin{itemize}[label={--\ },leftmargin=0.25in,labelsep=0.1625em]
 \addtolength{\itemsep}{-0.4\baselineskip}
 
 {% for item in teaching %}
+\begin{minipage}{\textwidth}
 \item {\bf\hspace{0pt}{{item.title}},  {{item.course}}}  \emph{({{item.term}})}\\
 \emph{\hspace{0pt}{{item.number}}, {{item.institution}}}\\
 {\small {{item.responsibilities}}}
+\end{minipage}
 {% endfor %}
 \end{itemize}
 
@@ -249,7 +263,7 @@ In \emph{\hspace{0pt}{{item.venue}}}, {{item.month}}.
 \vspace{8pt}
 
 \textsb{\large Program Committee}
-\vspace{-6pt}
+%\vspace{-6pt}
 
 {% assign sorted_service = service | sort:"key" | reverse %}
 \begin{itemize}[label={--\ },leftmargin=0.25in,labelsep=0.1625em]
@@ -257,15 +271,18 @@ In \emph{\hspace{0pt}{{item.venue}}}, {{item.month}}.
 {% for item in sorted_service %}
 {% if item.type == "professional-pc" %} 
     {% if item.chair %} 
+    \begin{minipage}{\textwidth}
     \item \textbf{Program co-chair}, {{ item.description }}
+    \end{minipage}
     {% else %}
+    \begin{minipage}{\textwidth}
     \item {{item.description}}
+    \end{minipage}
     {% endif %}
 {% endif %}
 {% endfor %}
 \end{itemize}
 
-\newpage
 \textsb{\large External Reviewer}
 \vspace{-6pt}
 \begin{itemize}[label={--\ },leftmargin=0.25in,labelsep=0.1625em]
