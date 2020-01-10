@@ -70,7 +70,7 @@ published: true
     {% if item.slides %}
     <div class="col-md-10">
         <p><a href="{{ item.url }}">{{ item.title }}</a></br>
-        {{item.authors | replace: "Matthew Bernhard", "<u>Matthew Bernhard</u>"}}</br>
+        {{item.authors | replace: "~","&nbsp;"| replace: "Matthew&nbsp;Bernhard", "<u>Matthew&nbsp;Bernhard</u>"}}</br>
         {% if item.toappear %}
         To appear in <i>{{item.conference}}</i></br>
         {% else %}
@@ -84,7 +84,7 @@ published: true
     {% else %} 
     <div class="col-md-10">
         <p><a href="{{ item.url }}">{{ item.title }}</a></br>
-        {{item.authors | replace: "Matthew Bernhard", "<u>Matthew Bernhard</u>"}}</br>
+        {{item.authors | replace: "~","&nbsp;"| replace: "Matthew&nbsp;Bernhard", "<u>Matthew&nbsp;Bernhard</u>"}}</br>
         {% if item.toappear %}
         To appear in <i>{{item.conference}}</i></br>
         {% else %}
@@ -106,7 +106,7 @@ published: true
 {% for item in site.data.papers %}
     {% if item.type == "other" %}
                 <p><a href="{{ item.url }}">{{ item.title }}</a></br>
-				{{item.authors | replace: "Matthew Bernhard", "<u>Matthew Bernhard</u>"}}</br>
+        {{item.authors | replace: "~","&nbsp;"| replace: "Matthew&nbsp;Bernhard", "<u>Matthew&nbsp;Bernhard</u>"}}</br>
 				In <i>{{item.venue}}</i>, {{item.month}}.
                 </p>
     {% endif %}

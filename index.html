@@ -85,7 +85,7 @@ published: true
     {% if item.frontpage %}
     <div class="talk">
         <p><a href="{{ item.url }}">{{ item.title }}</a></br>
-        {{item.authors | replace: "Matthew Bernhard", "<u>Matthew Bernhard</u>"}}</br>
+        {{item.authors | replace: "~","&nbsp;"| replace: "Matthew&nbsp;Bernhard", "<u>Matthew&nbsp;Bernhard</u>"}}</br>
         {% if item.toappear %}
         To appear in <i>{{item.conference}}</i></br>
         {% else %}

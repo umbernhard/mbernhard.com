@@ -36,7 +36,7 @@
   toappear: false
 - title: "On the Usability of HTTPS Deployment"
   date: 2019-05-08
-  authors: Matthew~Bernhard, Jonathan~Sharman, Claudia~Ziegler~Acemyan, Philip~Kortum, Dan~S. Wallach, and J.~Alex~Halderman
+  authors: Matthew~Bernhard, Jonathan~Sharman, Claudia~Ziegler~Acemyan, Philip~Kortum, Dan~S.~Wallach, and J.~Alex~Halderman
   conference: Proceedings of the ACM Conference on Human Factors on Computing Systems
   abbreviation: (CHI'19)
   month: May 2019
@@ -70,7 +70,7 @@
   toappear: false
 - title: "Voting Technologies, Recount Methods and Votes in Wisconsin and Michigan in 2016"
   date: 2018-02-22
-  authors: Walter~R.~Mebane,~Jr.,  Matthew~Bernhard
+  authors: Walter~R.~Mebane,~Jr. and Matthew~Bernhard
   conference: Proceedings of the 3rd Annual Workshop on Advances in Secure Electronic Voting 
   abbreviation: (Voting'18)
   month: February 2019
@@ -82,7 +82,7 @@
   toappear: false
 - title: "Public Evidence from Secret Ballots"
   date: 2017-10-04
-  authors: Matthew~Bernhard, Josh~Benaloh, J.~Alex~Halderman,  Ronald~L. Rivest, Peter~Y. A.~Ryan, Philip~B. Stark, Vanessa~Teague, Poorvi~L. Vora, and Dan~S. Wallach
+  authors: Matthew~Bernhard, Josh~Benaloh, J.~Alex~Halderman,  Ronald~L. Rivest, Peter~Y. A.~Ryan, Philip~B. Stark, Vanessa~Teague, Poorvi~L. Vora, and Dan~S.~Wallach
   conference: Proceedings of the 2nd International Joint Conference on Electronic Voting 
   abbreviation: (E-Vote-ID'17)
   month: October 2017
@@ -117,7 +117,7 @@
   toappear: false
 - title: "The Security Challenges of Online Voting Have Not Gone Away" 
   date: 2016-11-03
-  authors: Robert~Cunningham, Matthew~Bernhard, J.~Alex~Halderman
+  authors: Robert~Cunningham, Matthew~Bernhard, and J.~Alex~Halderman
   venue: IEEE Spectrum
   month: November 2016
   url: http://spectrum.ieee.org/tech-talk/telecom/security/the-security-challenges-of-online-voting-have-not-gone-away
@@ -127,7 +127,7 @@
   toappear: false
 - title: Towards a Complete View of the Certificate Ecosystem
   date: 2016-09-01
-  authors: Benjamin~VanderSloot, Johanna~Amann, Matthew~Bernhard, Zakir~Durumeric, Michael~Bailey, J.~Alex~Halderman
+  authors: Benjamin~VanderSloot, Johanna~Amann, Matthew~Bernhard, Zakir~Durumeric, Michael~Bailey, and J.~Alex~Halderman
   conference: Proceedings of the ACM Internet Measurement Conference
   abbreviation: (IMC'16)
   month: November 2016
