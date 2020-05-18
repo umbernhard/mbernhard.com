@@ -3,6 +3,13 @@
   chair: true
   description: 6th Workshop on Advances in Secure Electronic Voting (Voting'21)
 - type: professional-pc
+  key: 2020-10-01
+  chair: false
+  description: Fifth International Joint Conference on Electronic Voting (E-Vote-ID'20)
+- type: professional-external
+  key: 2020-03-20
+  description: Election Law Journal
+- type: professional-pc
   key: 2020-02-01
   chair: true
   description: 5th Workshop on Advances in Secure Electronic Voting (Voting'20)
