@@ -126,10 +126,11 @@ Computer Science and Engineering\\
 
 {% for item in papers %}
 {% if item.type == "conference" %}
-\begin{minipage}{\textwidth} \item {\bf \href{ {{item.url}} }{ {{item.title}} } } \\
+\item {\bf \href{ {{item.url}} }{ {{item.title}} } } \\
 {{item.authors | replace: "Matthew Bernhard", name }}\\
 {% if item.toappear %} To appear in \emph{\hspace{0pt}{{item.conference}} }  {% else %} In \emph{\hspace{0pt}{{item.conference}} }  {% endif %}\\
-\textbf{ {{item.abbreviation}} }, {{item.month}}. \end{minipage}
+\textbf{ {{item.abbreviation}} }, {{item.month}}. 
+    {% if item.awards %} \\ {\bf {{item.awards}} } {% endif %}
 {% if item.additional %} \\ ---{\bf {{item.additional}} } {% endif %}
 {% endif %}
 {% endfor %}
@@ -146,10 +147,11 @@ Computer Science and Engineering\\
 {% for item in papers %}
 {% if item.type == "workshop" %}
 %\begin{samepage}
-\begin{minipage}{\textwidth} \item {\bf \href{ {{item.url}} }{ {{item.title}} } } \\
+\item {\bf \href{ {{item.url}} }{ {{item.title}} } } \\
 {{item.authors | replace: "Matthew Bernhard", name }}\\
 {% if item.toappear %} To appear in \emph{\hspace{0pt}{{item.conference}} }  {% else %} In \emph{\hspace{0pt}{{item.conference}} }  {% endif %}\\
-\textbf{ {{item.abbreviation}} }, {{item.month}}. \end{minipage}
+\textbf{ {{item.abbreviation}} }, {{item.month}}. 
+    {% if item.awards %} \\ \textbf{ {{item.awards}} } {% endif %}
 {% if item.additional %} \\ ---{\bf {{item.additional}} } {% endif %}
 %\end{samepage}
 {% endif %}
@@ -166,10 +168,9 @@ Computer Science and Engineering\\
 {% for item in papers %}
 {% if item.type == "other" %}
 %\begin{samepage}
-\begin{minipage}{\textwidth} \item {\bf \href{ {{item.url}} }{ {{item.title}} } } \\
+ \item {\bf \href{ {{item.url}} }{ {{item.title}} } } \\
 {{item.authors | replace: "Matthew Bernhard", name }}\\
 In \emph{\hspace{0pt}{{item.venue}}}, {{item.month}}.
-\end{minipage}
 {% if item.additional %} \\ ---{\bf {{item.additional}} } {% endif %}
 %\end{samepage}
 {% endif %}
@@ -189,15 +190,11 @@ In \emph{\hspace{0pt}{{item.venue}}}, {{item.month}}.
 {% for item in talks %}
 {% if item.type == 'invited' %}
 {% if item.url %}
-\begin{minipage}{\textwidth}
 \item {\bf \href{ {{item.url}} }{ {{item.title}} }}\\
     {{item.event}}, {{item.location}}, {{item.date | date: "%B %Y"}}.
-\end{minipage}
 {% else %}
-\begin{minipage}{\textwidth}
 \item {\bf {{item.title}} }\\
     {{item.event}}, {{item.location}}, {{item.date | date: "%B %Y"}}.
-\end{minipage}
 {% endif %}
 {% endif %}
 {% endfor %}
@@ -214,10 +211,8 @@ In \emph{\hspace{0pt}{{item.venue}}}, {{item.month}}.
 
 {% for item in talks %}
 {% if item.type == 'selected' %}
-\begin{minipage}{\textwidth}
 \item {\bf \href{item.url}{{item.title}}}\\
     {{item.event}}, {{item.location}}, {{item.date | date: "%B %Y"}}.
-\end{minipage}
 {% endif %}
 {% endfor %}
 \end{itemize}
@@ -234,9 +229,7 @@ In \emph{\hspace{0pt}{{item.venue}}}, {{item.month}}.
 \addtolength{\itemsep}{-0.525\baselineskip}
 
 {% for item in mentorship %}
-\begin{minipage}{\textwidth}
 \item[--\ {{item.time}}:] {{item.student}}
-\end{minipage}
 {% endfor %}
 \end{itemize}
 
@@ -249,11 +242,9 @@ In \emph{\hspace{0pt}{{item.venue}}}, {{item.month}}.
 \addtolength{\itemsep}{-0.4\baselineskip}
 
 {% for item in teaching %}
-\begin{minipage}{\textwidth}
 \item {\bf\hspace{0pt}{{item.title}},  {{item.course}}}  \emph{({{item.term}})}\\
 \emph{\hspace{0pt}{{item.number}}, {{item.institution}}}\\
 {\small {{item.responsibilities}}}
-\end{minipage}
 {% endfor %}
 \end{itemize}
 
@@ -271,13 +262,9 @@ In \emph{\hspace{0pt}{{item.venue}}}, {{item.month}}.
 {% for item in sorted_service %}
 {% if item.type == "professional-pc" %} 
     {% if item.chair %} 
-    \begin{minipage}{\textwidth}
     \item \textbf{Program co-chair}, {{ item.description }}
-    \end{minipage}
     {% else %}
-    \begin{minipage}{\textwidth}
     \item {{item.description}}
-    \end{minipage}
     {% endif %}
 {% endif %}
 {% endfor %}

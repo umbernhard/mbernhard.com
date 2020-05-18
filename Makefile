@@ -5,6 +5,9 @@ all: files/cv.pdf
 files/cv.pdf: cv/template.tex 
 	cd cv; rake;
 	cp cv/cv.pdf files/bernhard-cv.pdf
+
+show: all
+	jekyll serve
 	
 clean:
 	rm -rf build
