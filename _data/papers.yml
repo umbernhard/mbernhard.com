@@ -8,7 +8,7 @@
   top: true
   frontpage: true
   type: conference
-  slides: 
+  slides: https://docs.google.com/presentation/d/1YkL5ZzLMy7J6UO99FP7ykpzICPXw4v0bVPZA09f_8mQ/edit?usp=sharing
   toappear: false
   awards: Best Student Paper Award
 - title: "Decentralized Control: A Case Study of Russia"
