@@ -1,4 +1,8 @@
 - type: professional-pc
+  key: 2021-08-11
+  chair: false
+  description: 30th USENIX Security Symposium (Sec'21) 
+- type: professional-pc
   key: 2021-02-01
   chair: true
   description: 6th Workshop on Advances in Secure Electronic Voting (Voting'21)
@@ -18,7 +22,7 @@
   description: ACM Conferences on Human Factors in Computing Systems (CHI'20) 
 - type: professional-external
   key: 2019-08-01
-  description: USENIX Security Symposium (USENIX'19) 
+  description: USENIX Security Symposium (Sec'19) 
 - type: professional-external
   key: 2018-11-01
   description: ACM Internet Measurement Conference (IMC'18) 
