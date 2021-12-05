@@ -2,3 +2,5 @@ source: .
 destination: ./build
 safe: true
 exclude: [cv/, Makefile]
+
+theme: jekyll-theme-minimal
