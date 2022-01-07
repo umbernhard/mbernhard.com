@@ -1,3 +1,27 @@
+- title: "Risk-limiting Audits: A Practical Systematization of Knowledge"
+  date: 2021-10-07
+  authors: Matthew Bernhard
+  conference: Proceedings of the Seventh International Joint Conference on Electronic Voting
+  abbreviation: (E-Vote-ID'21)
+  month: October 2021
+  url: https://mbernhard.com/papers/RLA_Threat_Model.pdf 
+  top: true
+  frontpage: true
+  type: conference
+  slides: https://docs.google.com/presentation/d/1Sxtx7dcgIsys9Fzna1cA70-Cb762K5Jzzn61ZAJENSY/edit?usp=sharing
+  toappear: false
+  awards: Best Student Paper Award
+- title: "Tales from the Trenches: Case Studies in Election Cybersecurity Preparedness in Texas"
+  date: 2021-10-07
+  authors: Elizabeth Kasongo, Matthew Bernhard, and Chris Bronk
+  conference: Proceedings of the Seventh International Joint Conference on Electronic Voting
+  abbreviation: (E-Vote-ID'21)
+  month: October 2021
+  url: https://mbernhard.com/papers/Cybersecurity_preparedness_in_Texas.pdf  
+  top: true
+  frontpage: false
+  type: conference
+  toappear: false
 - title: "Can Voters Detect Malicious Manipulation of Ballot Marking Devices?"
   date: 2020-05-29
   authors: Matthew Bernhard, Allison McDonald, Henry Meng, Jensen Hwa, Nakul Bajaj, Kevin  Chang, and J. Alex Halderman
