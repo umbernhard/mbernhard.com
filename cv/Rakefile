@@ -8,6 +8,7 @@ ext = ".yml"
 task :build do
   context = {}
   Dir["../_data/*.yml"].each do |file|
+    puts file
     client = YAML.load_file(file)
 	key = File.basename file, ext
 	context[key] = client

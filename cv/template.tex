@@ -93,12 +93,19 @@ Research Engineer,
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\cvsection{Research Overview}
+\cvsection{Overview}
 \vspace{-2pt}
 
 \begin{itemize}[label={},leftmargin=0.25in,labelsep=0pt]\addtolength{\itemsep}{-0.25\baselineskip}
 
-\item My research focuses on areas where the security and privacy implications of sophisticated systems impacts users in the real world. My interests include election security, usability, human-computer interaction, censorship measurement and resistance, Internet measurement, cryptography, statistics, and systems security. I'm also interested in the intersection of computer science, psychology, politics, and policy.
+\item My work focuses on making security theory a reality. The most common the
+    barriers to implementing better security are a lack of tooling,
+        training, and resources. My goal is to build security systems and
+        products that are easy to use, provide substantial protection, and make
+        users \textit{feel} secure. Election systems in particular
+        have proven to be a crucible for overcoming barriers and designing
+        systems that satisfy substantial constraints while still providing
+        meaningful security and intuitive user experiences. 
 
 \end{itemize}
 
@@ -121,20 +128,100 @@ Research Engineer,
 
 \cvsection{Honors and Awards}
 \begin{itemize}[label={--\ },leftmargin=0.25in,labelsep=0.1625em]\addtolength{\itemsep}{-0.25\baselineskip}
+\addtolength{\itemsep}{-0.25\baselineskip}
+    {% endraw %}
 
 {% for item in awards %}
-\item {\bf {{item.name}} for {{item.reason}}
+\item {\bf {{item.title}} }
+{% if item.reason %} for {{item.reason}}{% endif %}
 {% endfor %}
         
 \end{itemize}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Professional Experience}
+\begin{itemize}[label={--\ },leftmargin=0.25in,labelsep=0.1625em]
+\addtolength{\itemsep}{-0.25\baselineskip}
+\setstretch{0.975}
+
+\item\textsb{\href{https://voting.works}{Research Engineer at VotingWorks}} (September 2020--present)
+    {\small\begin{itemize}
+            \item{\bf Product security}---deployed state-of-the-art platform security to in-the-field voting equipment, relying on UEFI Secure Boot, TPM-based attestation, and a dm-verity-protected filesystem.
+            \item{\bf Operational security}---implemented organization-wide security improvements to operational security, including code signing, multifactor authentication, DDoS protection, regular penetration testing, SIEM, web application vulnerability scanning.
+            \item{\bf Cutting-edge risk-limiting audit support}---implemented state-of-the-art risk-limiting audit mechanisms to enable batch-level audits, hybrid audits, and audits of instant-runoff voting.
+            \item{\bf Development platform improvements}---rebuilt the voting system to run off a Debian base (from Ubuntu), relying on Debian preseed files and virtual machines to enhance the development-to-production experience. 
+        \end{itemize}
+    } 
+
+\item\textsb{Expert Witness} (2018--present)\\
+    {\small Served as an expert witness in several lawsuits pertaining to election security. {\it \href{https://www.theroot.com/brian-kemp-doesnt-need-to-rig-georgias-election-beca-1830233656}{Curling et al. v. Raffensperger}}, {\it \href{https://www.apnews.com/b3e8f250f50244478ae3bbf19399f6ff}{CGG v. Crittenden}}, {\it {\href{https://www.pacermonitor.com/public/case/25902838/Shelby_Advocates_for_Valid_Elections_et_al_v_Hargett_et_al}{Shelby Advocates for Valid Elections et al. v. Hargett et al.}}}, {\it {\href{https://casetext.com/case/natl-fedn-of-blind-inc-v-lamone}{NFB v. Lamone}}}}
+
+\item\textsb{\href{https://voting.works}{Software Engineering Consultant for VotingWorks}} (June 2019--2020)\\
+    {\small Implemented risk-limiting audit math for VotingWorks' open source risk-limiting audit tool \href{https://arlo.votingworks.app/}{Arlo}.} 
+\item\textsb{\href{https://verifiedvoting.org}{Data Science Consultant for Verified Voting}} (June 2018--September 2019)\\
+{\small Collected and interpreted data on currently certified voting equipment in the United States to empower municipalities to make intelligent purchasing decisions. Focus on the cyber security impacts of voting technology.}
+\item\textsb{\href{https://cloudflare.com}{Cryptography Intern, Cloudflare}} (2017)\\
+{\small Developed Certificate Transparency monitoring features. Also built an SSL detector to determine what SSL settings customer sites can support, under the advising of Nick Sullivan.}
+
+\item\textsb{\href{https://www.microsoft.com/en-us/research/}{Microsoft Research Intern}} (2015)\\
+{\small Explored applications of trusted platform modules (TPMs) in voting through interfaces provided by Windows 10 under the advising of Josh Benaloh.}
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cvsection{Professional Service}
+\vspace{8pt}
+
+\textsb{\large Program Committee}
+%\vspace{-6pt}
+
+{% assign sorted_service = service | sort:"key" | reverse %}
+\begin{itemize}[label={--\ },leftmargin=0.25in,labelsep=0.1625em]
+\addtolength{\itemsep}{-0.5\baselineskip}
+{% for item in sorted_service %}
+{% if item.type == "professional-pc" %} 
+    {% if item.chair %} 
+    \item \textbf{Program co-chair}, {{ item.description }}
+    {% else %}
+    \item {{item.description}}
+    {% endif %}
+{% endif %}
+{% endfor %}
+\end{itemize}
+
+\textsb{\large External Reviewer}
+\vspace{-6pt}
+\begin{itemize}[label={--\ },leftmargin=0.25in,labelsep=0.1625em]
+\addtolength{\itemsep}{-0.5\baselineskip}
+
+{% for item in sorted_service %}
+{% if item.type == "professional-external" %}
+\item {{item.description}}
+{% endif %}
+{% endfor %}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagebreak
+\cvsection{Teaching}
+%\vspace{-6pt}
+
+\begin{itemize}[label={--\ },leftmargin=0.25in,labelsep=0.1625em]
+\addtolength{\itemsep}{-0.4\baselineskip}
+
+{% for item in teaching %}
+\item {\bf\hspace{0pt}{{item.title}},  {{item.course}}}  \emph{({{item.term}})}\\
+\emph{\hspace{0pt}{{item.number}}, {{item.institution}}}\\
+{\small {{item.responsibilities}}}
+{% endfor %}
+\end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \cvsection{Refereed Conference Publications}
 \vspace{4pt}
 \begin{enumerate}[leftmargin=0.25in,labelsep=0.25em,resume]\interlinepenalty10000 
 \addtolength{\itemsep}{-0.25\baselineskip}
-    {% endraw %}
 
 {% for item in papers %}
 {% if item.type == "conference" %}
@@ -212,7 +299,6 @@ In \emph{\hspace{0pt}{{item.venue}}}, {{item.month}}.
 {% endfor %}
 \end{itemize}
 
-\pagebreak
 \textsb{\large Selected Talks}
 \vspace{-6pt}
 \begin{itemize}[label={--\ },leftmargin=0.25in,labelsep=0.1625em]
@@ -248,55 +334,6 @@ In \emph{\hspace{0pt}{{item.venue}}}, {{item.month}}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\cvsection{Teaching}
-%\vspace{-6pt}
-
-\begin{itemize}[label={--\ },leftmargin=0.25in,labelsep=0.1625em]
-\addtolength{\itemsep}{-0.4\baselineskip}
-
-{% for item in teaching %}
-\item {\bf\hspace{0pt}{{item.title}},  {{item.course}}}  \emph{({{item.term}})}\\
-\emph{\hspace{0pt}{{item.number}}, {{item.institution}}}\\
-{\small {{item.responsibilities}}}
-{% endfor %}
-\end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\cvsection{Professional Service}
-\vspace{8pt}
-
-\textsb{\large Program Committee}
-%\vspace{-6pt}
-
-{% assign sorted_service = service | sort:"key" | reverse %}
-\begin{itemize}[label={--\ },leftmargin=0.25in,labelsep=0.1625em]
-\addtolength{\itemsep}{-0.5\baselineskip}
-{% for item in sorted_service %}
-{% if item.type == "professional-pc" %} 
-    {% if item.chair %} 
-    \item \textbf{Program co-chair}, {{ item.description }}
-    {% else %}
-    \item {{item.description}}
-    {% endif %}
-{% endif %}
-{% endfor %}
-\end{itemize}
-
-\textsb{\large External Reviewer}
-\vspace{-6pt}
-\begin{itemize}[label={--\ },leftmargin=0.25in,labelsep=0.1625em]
-\addtolength{\itemsep}{-0.5\baselineskip}
-
-{% for item in sorted_service %}
-{% if item.type == "professional-external" %}
-\item {{item.description}}
-{% endif %}
-{% endfor %}
-\end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \cvsection{Broader Impact of Selected Projects}
 \begin{itemize}[label={--\ },leftmargin=0.25in,labelsep=0.1625em]
 \addtolength{\itemsep}{-0.25\baselineskip}
@@ -311,27 +348,20 @@ In \emph{\hspace{0pt}{{item.venue}}}, {{item.month}}.
 {\small Supported efforts to detect vote manipulation in the 2016 election in Michigan, Wisconsin, and Pennsylvania. While progress was hindered and in places entirely halted due to political and legal reasons, what little evidence htat was generated did not show that the 2016 Presidential election was fraudulent.}
 \end{itemize}
 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \pagebreak
-\cvsection{Professional Experience}
+\cvsection{References}
 \begin{itemize}[label={--\ },leftmargin=0.25in,labelsep=0.1625em]
 \addtolength{\itemsep}{-0.25\baselineskip}
-\setstretch{0.975}
 
-\item\textsb{Expert Witness} (2018--present)\\
-{\small Served as an expert witness in several lawsuits opposing the use of direct-recording electronic voting machines. {\it \href{https://www.theroot.com/brian-kemp-doesnt-need-to-rig-georgias-election-beca-1830233656}{Curling et al. v. Raffensperger}}, {\it \href{https://www.apnews.com/b3e8f250f50244478ae3bbf19399f6ff}{CGG v. Crittenden}}, {\it {\href{https://www.pacermonitor.com/public/case/25902838/Shelby_Advocates_for_Valid_Elections_et_al_v_Hargett_et_al}{Shelby Advocates for Valid Elections et al. v. Hargett et al.}}}}
-
-\item\textsb{\href{https://voting.works}{Software Engineering Consultant for VotingWorks}} (June 2019--present)\\
-    {\small Implemented risk-limiting audit math for VotingWorks' open source risk-limiting audit tool \href{https://arlo.votingworks.app/}{Arlo}.} 
-\item\textsb{\href{https://verifiedvoting.org}{Data Science Consultant for Verified Voting}} (June 2018--September 2019)\\
-{\small Collected and interpreted data on currently certified voting equipment in the United States to empower municipalities to make intelligent purchasing decisions. Focus on the cyber security impacts of voting technology.}
-\item\textsb{\href{https://cloudflare.com}{Cryptography Intern, Cloudflare}} (2017)\\
-{\small Developed Certificate Transparency monitoring features. Also built an SSL detector to determine what SSL settings customer sites can support, under the advising of Nick Sullivan.}
-
-\item\textsb{\href{https://www.microsoft.com/en-us/research/}{Microsoft Research Intern}} (2015)\\
-{\small Explored applications of trusted platform modules (TPMs) in voting through interfaces provided by Windows 10 under the advising of Josh Benaloh.}
+{% for item in references %}
+\item {\bf \href{ {{item.url}} }{ {{item.name}} } }\\
+    {{item.position}}
+{% endfor %}
 \end{itemize}
-
 
 
 

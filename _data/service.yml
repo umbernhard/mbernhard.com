@@ -1,55 +1,55 @@
 - type: professional-pc
-  key: 2022-02-01
+  key: 20220201
   chair: false
   description: 7th Workshop on Advances in Secure Electronic Voting (Voting'22)
 - type: professional-pc
-  key: 2022-10-01
+  key: 20221001
   chair: false
-  description: Seventh International Joint Conference on Electronic Voting (E-Vote-ID'22)
+  description: 7th International Joint Conference on Electronic Voting (E-Vote-ID'22)
 - type: professional-pc
-  key: 2021-08-11
+  key: 20210811
   chair: false
   description: 32th USENIX Security Symposium (Sec'23) 
 - type: professional-pc
-  key: 2021-08-11
+  key: 20210811
   chair: false
   description: 30th USENIX Security Symposium (Sec'21) 
 - type: professional-pc
-  key: 2021-02-01
+  key: 20210201
   chair: true
   description: 6th Workshop on Advances in Secure Electronic Voting (Voting'21)
 - type: professional-pc
-  key: 2020-10-01
+  key: 20201001
   chair: false
   description: Fifth International Joint Conference on Electronic Voting (E-Vote-ID'20)
 - type: professional-external
-  key: 2020-03-20
+  key: 20200320
   description: Election Law Journal
 - type: professional-pc
-  key: 2020-02-01
+  key: 20200201
   chair: true
   description: 5th Workshop on Advances in Secure Electronic Voting (Voting'20)
 - type: professional-external
-  key: 2019-11-01
+  key: 20191101
   description: ACM Conferences on Human Factors in Computing Systems (CHI'20) 
 - type: professional-external
-  key: 2019-08-01
+  key: 20190801
   description: USENIX Security Symposium (Sec'19) 
 - type: professional-external
-  key: 2018-11-01
+  key: 20181101
   description: ACM Internet Measurement Conference (IMC'18) 
 - type: professional-external
-  key: 2018-10-01
+  key: 20181001
   description: ACM Conference on Computer and Communications Security (CCS'18) 
 - type: professional-external
-  key: 2018-08-01
+  key: 20180801
   description:  International Symposium on Research in Attacks, Intrusions, and Defenses (RAID'18) 
 - type: professional-external
-  key: 2017-10-01
+  key: 20171001
   description: ACM Conference on Computer and Communications Security (CCS'17) 
 - type: professional-external
-  key: 2017-02-01
+  key: 20170201
   description: Network and Distributed System Security Symposium (NDSS'17) 
 - type: professional-external
-  key: 2016-08-01
+  key: 20160801
   description: IEEE Conference on Privacy, Security, and Trust (PST'16) 

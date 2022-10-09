@@ -1,5 +1,5 @@
 - title: "Risk-limiting Audits: A Practical Systematization of Knowledge"
-  date: 2021-10-07
+  date: 20211007
   authors: Matthew Bernhard
   conference: Proceedings of the Seventh International Joint Conference on Electronic Voting
   abbreviation: (E-Vote-ID'21)
@@ -11,7 +11,7 @@
   slides: https://docs.google.com/presentation/d/1Sxtx7dcgIsys9Fzna1cA70-Cb762K5Jzzn61ZAJENSY/edit?usp=sharing
   toappear: false
 - title: "Tales from the Trenches: Case Studies in Election Cybersecurity Preparedness in Texas"
-  date: 2021-10-07
+  date: 20211007
   authors: Elizabeth Kasongo, Matthew Bernhard, and Chris Bronk
   conference: Proceedings of the Seventh International Joint Conference on Electronic Voting
   abbreviation: (E-Vote-ID'21)
@@ -22,7 +22,7 @@
   type: conference
   toappear: false
 - title: "Can Voters Detect Malicious Manipulation of Ballot Marking Devices?"
-  date: 2020-05-29
+  date: 20200529
   authors: Matthew Bernhard, Allison McDonald, Henry Meng, Jensen Hwa, Nakul Bajaj, Kevin  Chang, and J. Alex Halderman
   conference: Proceedings of the 41st IEEE Symposium on Security and Privacy 
   abbreviation: (Oakland'20)
@@ -35,7 +35,7 @@
   toappear: false
   awards: Best Student Paper Award
 - title: "Decentralized Control: A Case Study of Russia"
-  date: 2020-02-23
+  date: 20200223
   authors: Reethika Ramesh, Ram Sundara Raman, Matthew Bernhard, Victor Ongkowijaya, Leonid Evdokimov, Anne Edmundson, Steven Sprecher, Muhammad Ikram, and Roya Ensafi
   conference: Proceedings of the 27th Network and Distributed Systems Symposium 
   abbreviation: (NDSS'20)
@@ -47,7 +47,7 @@
   slides: 
   toappear: false
 - title: "UnclearBallot: Automated Ballot Image Manipulation"
-  date: 2019-10-01
+  date: 20191001
   authors: Matthew Bernhard, Kartikeya Kandula, Jeremy Wink, and J. Alex Halderman
   conference: Proceedings of the 4th International Joint Conference on Electronic Voting 
   abbreviation: (E-Vote-ID'19)
@@ -59,7 +59,7 @@
   slides: 
   toappear: false
 - title: "On the Usability of HTTPS Deployment"
-  date: 2019-05-08
+  date: 20190508
   authors: Matthew Bernhard, Jonathan Sharman, Claudia Ziegler Acemyan, Philip Kortum, Dan S. Wallach, and J. Alex Halderman
   conference: Proceedings of the ACM Conference on Human Factors on Computing Systems
   abbreviation: (CHI'19)
@@ -71,7 +71,7 @@
   slides: https://drive.google.com/open?id=1hGvWWiAqoUjFXOQScAxr_E5qIL0PFmzMLoTfu3OaeJk
   toappear: false
 - title: "Bernoulli Ballot-Polling: A Manifest Improvement for Risk-Limiting Audits"
-  date: 2019-02-22
+  date: 20190222
   authors: Kellie Ottoboni, Matthew Bernhard, J. Alex Halderman, Ronald L. Rivest, and Philip B. Stark
   conference: Proceedings of the 4th Annual Workshop on Advances in Secure Electronic Voting 
   abbreviation: (Voting'19)
@@ -82,7 +82,7 @@
   type: workshop
   toappear: false
 - title: "403 Forbidden: A Global View of CDN Geoblocking"
-  date: 2018-11-01
+  date: 20181101
   authors: Allison McDonald, Matthew Bernhard, Luke Valenta, Benjamin VanderSloot, Will Scott, Nick Sullivan, J. Alex Halderman, Roya Ensafi
   conference: Proceedings of the ACM Internet Measurement Conference
   abbreviation: (IMC'18)
@@ -93,7 +93,7 @@
   type: conference
   toappear: false
 - title: "Voting Technologies, Recount Methods and Votes in Wisconsin and Michigan in 2016"
-  date: 2018-02-22
+  date: 20180222
   authors: Walter R. Mebane, Jr. and Matthew Bernhard
   conference: Proceedings of the 3rd Annual Workshop on Advances in Secure Electronic Voting 
   abbreviation: (Voting'18)
@@ -105,7 +105,7 @@
   type: workshop
   toappear: false
 - title: "Public Evidence from Secret Ballots"
-  date: 2017-10-04
+  date: 20171004
   authors: Matthew Bernhard, Josh Benaloh, J. Alex Halderman,  Ronald L. Rivest, Peter Y. A. Ryan, Philip B. Stark, Vanessa Teague, Poorvi L. Vora, and Dan S. Wallach
   conference: Proceedings of the 2nd International Joint Conference on Electronic Voting 
   abbreviation: (E-Vote-ID'17)
@@ -117,7 +117,7 @@
   type: conference
   toappear: false
 - title: "Understanding the Mirai Botnet"
-  date: 2017-08-13
+  date: 20170813
   authors: Manos Antonakakis, Tim April, Michael Bailey, Matthew Bernhard, Elie Bursztein, Jaime Cochran, Zakir Durumeric, J. Alex Halderman, Luca Invernizzi, Michalis Kallitsis, Deepak Kumar, Chaz Lever, Zane Ma, Joshua Mason, Damian Menscher, Chad Seaman, Nick Sullivan, Kurt Thomas, and Yi Zhou
   conference: Proceedings of the 26th USENIX Security Symposium
   abbreviation: (USENIX'17)
@@ -128,7 +128,7 @@
   type: conference
   toappear: false
 - title: "Implementing Attestable Kiosks"
-  date: 2016-12-13
+  date: 20161213
   authors: Matthew Bernhard, J. Alex Halderman, and Gabe Stocco
   conference: Proceedings of the 14th IEEE Conference on Privacy, Security, and Trust
   abbreviation: (PST'16)
@@ -140,7 +140,7 @@
   type: conference
   toappear: false
 - title: "The Security Challenges of Online Voting Have Not Gone Away" 
-  date: 2016-11-03
+  date: 20161103
   authors: Robert Cunningham, Matthew Bernhard, and J. Alex Halderman
   venue: IEEE Spectrum
   month: November 2016
@@ -150,7 +150,7 @@
   type: other
   toappear: false
 - title: Towards a Complete View of the Certificate Ecosystem
-  date: 2016-09-01
+  date: 20160901
   authors: Benjamin VanderSloot, Johanna Amann, Matthew Bernhard, Zakir Durumeric, Michael Bailey, and J. Alex Halderman
   conference: Proceedings of the ACM Internet Measurement Conference
   abbreviation: (IMC'16)
