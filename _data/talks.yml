@@ -1,28 +1,31 @@
 - type: invited
   date: 20190917
   title: "Recount 2016 and Student Voter Engagement"
-  event: University of Pennsylvania Voter Engagement Week
+  event: UPenn Voter Engagement Week
   location: Philadelphia, Pennsylvania 
   slides: https://docs.google.com/presentation/d/1HLcdcIGxl2_3cGX5YKt6PHZmYMVV6zAt_mtudVxmi8k/edit?usp=sharing 
+  month: September 2019
 - type: invited
   date: 20190430
   title: "U.S. Civil Rights Commission testimony on voter registration security"
-  event: Michigan Advisory Committee to the U.S. Commission on Civil Rights
+  event: MI Advisory Committee to the U.S. Commission on Civil Rights
   location: Detroit, Michigan
   slides: https://drive.google.com/open?id=13Kn8FAEntfrXYHj1Y0OVoQJEtRz1GLFEU8oyzWYlhCs
-  url: 
+  month: April 2019
 - type: invited
   date: 20190314
   title: "Panel: Next Generation Voting Systems (moderator)"
   event: Election Verification Network Conference
   location: Washington, D.C.
   url: https://www.youtube.com/watch?v=aEhojZVXJVQ&list=PL1DeWOH5cy6Rcba515oOO4rD0iP0u_DKI&index=7
+  month: March 2019
 - type: invited
   date: 20190314
   title: "Panel: Usability and Voter Verification (moderator)"
   event: Election Verification Network Conference
   location: Washington, D.C.
   url: https://www.youtube.com/watch?v=G0EcHXLCn84&list=PL1DeWOH5cy6Rcba515oOO4rD0iP0u_DKI&index=7&t=0s
+  month: March 2019
 - type: invited
   date: 20180810
   title: "A Crash Course on Election Security"
@@ -30,12 +33,13 @@
   location: Las Vegas, Nevada
   url:
   slides: https://drive.google.com/open?id=1gkf1CuieaTJdRBVmO_GE6Q8Cme2fqD6ss3oTIthTrQU
+  month: August 2018
 - type: invited
   date: 20170315
   title: "Panel: Do We Want a Recount or Not?"
   event: Election Verification Network Conference
   location: Washington, D.C.
-  url:
+  month: March 2017
 - type: invited
   date: 20171111
   title: "Recount 2016: An Uninvited Security Audit of the U.S. Presidential Election"
@@ -43,50 +47,59 @@
   location: S\~ao Paulo, Brazil
   url: https://www.youtube.com/watch?v=_pzV921KnxU
   slides: https://docs.google.com/presentation/d/1avtECTXLuLDx1a7Z8MYta1va1tLmAbEs2ttzlh-Pku0/edit?usp=sharing
+  month: November 2017
 - type: invited
   date: 20161228
   title: "Recount 2016: An Uninvited Security Audit of the U.S. Presidential Election"
   event: 33rd Chaos Communications Congress 
   location: Hamburg, Germany
   url: https://media.ccc.de/v/33c3-8074-recount_2016_an_uninvited_security_audit_of_the_u_s_presidential_election
+  month: December 2016
 
-- type: election
-  date: 20171110
-  event: RoadSec Pro
-  location: S\~ao Paulo, Brazil
-- type: election
-  date: 20170610
-  event: Workshop on Electoral Technologies 
-  location: Brasilia, Brazil
 
+#- type: selected
+#  date: 20171110
+#  event: RoadSec Pro
+#  location: S\~ao Paulo, Brazil
+#  month: November 2017
+#- type: selected
+#  date: 20170610
+#  event: Workshop on Electoral Technologies 
+#  location: Brasilia, Brazil
+#  month: November 2016
 - type: selected
   title: "Internet Pinball: The Security and Privacy Impact of Redirects"
   date: 20190524
   event: Mozilla Security Research Summit
   location: San Francisco, California
   slides: https://drive.google.com/open?id=1iT7yBNyibEOsgafMdBjzhQ_suVQwhBEphBN2ctwtccM
+  month: May 2019
 - type: selected
   title: "Election Security and You"
   date: 20190413
   event: Midwest Security Workshop 
   location: Chicago, Illinois
   slides: https://drive.google.com/open?id=1gkf1CuieaTJdRBVmO_GE6Q8Cme2fqD6ss3oTIthTrQU
+  month: April 2019
 - type: selected
   title: "Coercion-resistant, Receipt-free, and Paperless Voting"
   date: 20190218
   event: Rump session at Financial Cryptography and Data Security 2019 
   location: St. Kitts
   slides: https://drive.google.com/open?id=1lnYCbWtdPxvEEjvuh6paRkUoYXVJEGfIY4W4nledapA
+  month: February 2019
 - type: selected
   title: "403 Forbidden: A Global View of Geoblocking"
   date: 20180818
   event: Rump session, 9th USENIX Workshop on Free and Open Communications on the Internet (FOCI'18) 
   location: Baltimore, Maryland 
   slides: https://drive.google.com/open?id=1IaoVFWufRVz065oUCHgj5Y__YzZIOlqVl4pERzfOQGA
+  month: August 2018
 - type: selected
   title: "A Constitutional Argument Against Burr-Feinstein"
   date: 20170817
   event: Rump session, 25th USENIX Security Symposium (USENIX'16)
   location: Austin, Texas 
   slides: https://drive.google.com/open?id=1qMkC8MWqDSTCao7uuf7EWXc3rvmjkLQrwMAHgjrrbOU
+  month: August 2017
 

@@ -1,34 +1,22 @@
 - type: professional-pc
   key: 20220201
   chair: false
-  description: 7th Workshop on Advances in Secure Electronic Voting (Voting'22)
+  description: Workshop on Advances in Secure Electronic Voting (Voting'20-25)
 - type: professional-pc
   key: 20221001
   chair: false
-  description: 7th International Joint Conference on Electronic Voting (E-Vote-ID'22)
+  description: International Joint Conference on Electronic Voting (E-Vote-ID'20-25)
 - type: professional-pc
   key: 20210811
   chair: false
-  description: 32th USENIX Security Symposium (Sec'23) 
-- type: professional-pc
-  key: 20210811
-  chair: false
-  description: 30th USENIX Security Symposium (Sec'21) 
-- type: professional-pc
-  key: 20210201
-  chair: true
-  description: 6th Workshop on Advances in Secure Electronic Voting (Voting'21)
-- type: professional-pc
-  key: 20201001
-  chair: false
-  description: Fifth International Joint Conference on Electronic Voting (E-Vote-ID'20)
+  description: USENIX Security Symposium (Sec'21,23) 
 - type: professional-external
   key: 20200320
   description: Election Law Journal
-- type: professional-pc
-  key: 20200201
+- type: other-conference
+  key: 20250327
+  description: Election Verification Network Conference (EVN'25)
   chair: true
-  description: 5th Workshop on Advances in Secure Electronic Voting (Voting'20)
 - type: professional-external
   key: 20191101
   description: ACM Conferences on Human Factors in Computing Systems (CHI'20) 

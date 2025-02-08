@@ -18,7 +18,8 @@ task :build do
     f.write template.render(context)
   end
   puts "Rendered template"
-  `pdflatex -halt-on-error cv.tex`
+  output = `pdflatex -halt-on-error cv.tex`
+  puts output
   puts "Built"
 end
 

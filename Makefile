@@ -11,6 +11,6 @@ show: all
 	
 clean:
 	rm -rf build
-	rm files/cv.pdf
+	rm files/bernhard-cv.pdf
 	rm cv/cv.*
 
